@@ -3,6 +3,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
@@ -16,18 +17,21 @@ DISTRICT  = "Ludhiana"
 RETENTION_DAYS = 30
 OUT_PATH  = Path("data/mandi/ludhiana.json")
 
+
 def slugify(name: str) -> str:
     """Turn 'Paddy(Dhan)(Common)' into 'paddy_dhan_common'."""
     s = name.lower().strip()
-    s = re.sub(r"[^\w\s-]", " ", s)  # drop parens etc
+    s = re.sub(r"[^\w\s-]", " ", s)
     s = re.sub(r"\s+", "_", s).strip("_")
     return s or "unknown"
 
+
 def fetch_all():
-    """Paginate through all Ludhiana rows (all commodities, markets, varieties)."""
+    """Paginate through all Ludhiana rows, with retries on timeout."""
     all_records = []
     offset = 0
     limit  = 1000
+
     while True:
         params = {
             "api-key": API_KEY,
@@ -37,9 +41,24 @@ def fetch_all():
             "filters[state]":    STATE,
             "filters[district]": DISTRICT,
         }
-        r = requests.get(BASE_URL, params=params, timeout=30)
-        r.raise_for_status()
-        payload = r.json()
+
+        payload = None
+        for attempt in range(1, 6):
+            try:
+                r = requests.get(BASE_URL, params=params, timeout=90)
+                r.raise_for_status()
+                payload = r.json()
+                break
+            except (requests.exceptions.Timeout,
+                    requests.exceptions.ConnectionError,
+                    requests.exceptions.HTTPError) as e:
+                wait = 5 * attempt
+                print(f"  attempt {attempt} failed ({type(e).__name__}: {e}); "
+                      f"retrying in {wait}s…", flush=True)
+                time.sleep(wait)
+        if payload is None:
+            raise RuntimeError(f"All 5 attempts to data.gov.in failed at offset={offset}")
+
         records = payload.get("records", [])
         if not records:
             break
@@ -47,16 +66,19 @@ def fetch_all():
         if len(records) < limit:
             break
         offset += limit
+
     return all_records
+
 
 def _to_int(x):
     try: return int(float(x))
     except (TypeError, ValueError): return None
 
+
 def transform(records):
     """Group into {crop_slug: {date: [row, ...]}} — no commodity whitelist."""
     grouped = {}
-    labels  = {}  # crop_slug -> original commodity name (for display)
+    labels  = {}
     for rec in records:
         commodity = (rec.get("commodity") or "").strip()
         if not commodity:
@@ -85,8 +107,9 @@ def transform(records):
         grouped.setdefault(crop_key, {}).setdefault(date_iso, []).append(row)
     return grouped, labels
 
+
 def merge_with_existing(new_data, new_labels):
-    """Load existing file, merge new dates in, prune old."""
+    """Load existing file, merge new dates in, prune old dates beyond retention."""
     existing = {}
     existing_labels = {}
     if OUT_PATH.exists():
@@ -108,6 +131,7 @@ def merge_with_existing(new_data, new_labels):
 
     labels = {**existing_labels, **new_labels}
     return existing, labels
+
 
 def main():
     print(f"Fetching {STATE}/{DISTRICT} from Agmarknet…", flush=True)
@@ -131,6 +155,7 @@ def main():
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"  wrote {OUT_PATH}", flush=True)
+
 
 if __name__ == "__main__":
     try:

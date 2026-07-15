@@ -1,8 +1,7 @@
 """
-Fetch PAU advisories, extract text from PDFs using pdfplumber,
-categorize by topic using rule-based parsing (English + Punjabi keywords),
-consolidate into one JSON file. Zero AI dependencies.
-Uses Playwright for JS-rendered pages.
+Fetch PAU advisories from Google Drive links listed in links.txt,
+extract text from PDFs, categorize by topic (English + Punjabi),
+consolidate into one JSON file. No scraping, no AI, no Playwright.
 """
 import json
 import os
@@ -10,6 +9,7 @@ import re
 import sys
 import time
 import urllib.request
+import urllib.error
 from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from io import BytesIO
@@ -20,29 +20,9 @@ except ImportError:
     os.system("pip install pdfplumber --break-system-packages -q")
     import pdfplumber
 
-try:
-    from playwright.sync_api import sync_playwright
-except ImportError:
-    os.system("pip install playwright --break-system-packages -q")
-    os.system("python3 -m playwright install chromium")
-    from playwright.sync_api import sync_playwright
-
+# --- Config ---
+LINKS_PATH = Path("data/advisory/links.txt")
 OUT_PATH = Path("data/advisory/pau_advisory.json")
-MAX_ISSUES = 4
-
-PAU_PAGES = [
-    {
-        "name": "Agro Advisory (Weekly)",
-        "url": "https://pau.edu/index.php?_act=manageSandesh&DO=viewAdvisory",
-        "type": "agro_advisory",
-    },
-    {
-        "name": "Kheti Sandesh",
-        "url": "https://pau.edu/index.php?_act=manageSandesh&DO=viewSandesh",
-        "type": "kheti_sandesh",
-    },
-]
-
 HEADERS = {"User-Agent": "ArcusPolicyResearch/1.0"}
 
 CROP_KEYWORDS = [
@@ -74,86 +54,107 @@ CROP_NAME_MAP = {
 }
 
 
-def fetch_page(url):
-    """Fetch a JS-rendered page using Playwright headless Chromium."""
-    print(f"  Launching headless browser for: {url}", flush=True)
-    for attempt in range(1, 4):
-        try:
-            with sync_playwright() as p:
-                browser = p.chromium.launch(headless=True)
-                page = browser.new_page()
-                page.goto(url, timeout=90000, wait_until="domcontentloaded")
-                time.sleep(5)
-                html = page.content()
-                browser.close()
-                if "404 Error" in html and ".pdf" not in html.lower():
-                    print(f"  Page returned 404 with no PDFs (attempt {attempt})", flush=True)
-                    time.sleep(5)
-                    continue
-                print(f"  Page loaded: {len(html):,} chars", flush=True)
-                return html
-        except Exception as e:
-            print(f"  browser attempt {attempt} failed: {e}", flush=True)
-            time.sleep(10 * attempt)
-    return None
+# ============================================================
+# READ LINKS FILE
+# ============================================================
 
+def read_links():
+    """Read links.txt and return list of link entries."""
+    if not LINKS_PATH.exists():
+        print(f"ERROR: {LINKS_PATH} not found.", flush=True)
+        return []
 
-def extract_pdf_links(html, page_type):
-    links = []
-    all_matches = set()
+    entries = []
+    for line_num, line in enumerate(LINKS_PATH.read_text(encoding="utf-8").splitlines(), 1):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        parts = [p.strip() for p in line.split("|")]
+        if len(parts) < 4:
+            print(f"  WARNING: line {line_num} has {len(parts)} parts, expected 4. Skipping: {line}", flush=True)
+            continue
 
-    for pat in [
-        re.compile(r'href=["\']([^"\']*?\.pdf)["\']', re.IGNORECASE),
-        re.compile(r'(?:window\.open|location\.href)\s*[=(]\s*["\']([^"\']*?\.pdf)["\']', re.IGNORECASE),
-    ]:
-        for m in pat.finditer(html):
-            all_matches.add(m.group(1))
+        doc_type, issue_num, date_str, drive_url = parts[0], parts[1], parts[2], parts[3]
+        file_id = extract_drive_id(drive_url)
+        if not file_id:
+            print(f"  WARNING: line {line_num} has invalid Google Drive URL. Skipping.", flush=True)
+            continue
 
-    a_pattern = re.compile(r'<a[^>]*?href=["\']([^"\']*?)["\'][^>]*?>', re.IGNORECASE)
-    for m in a_pattern.finditer(html):
-        href = m.group(1)
-        if href.lower().endswith('.pdf'):
-            all_matches.add(href)
-
-    for pdf_path in all_matches:
-        if not pdf_path.startswith("http"):
-            if pdf_path.startswith("/"):
-                pdf_url = "https://pau.edu" + pdf_path
-            else:
-                pdf_url = "https://pau.edu/" + pdf_path
-        else:
-            pdf_url = pdf_path
-
-        escaped = re.escape(pdf_path)
-        context_match = re.search(r'.{0,300}' + escaped + r'.{0,300}', html, re.DOTALL)
-        context = context_match.group(0) if context_match else ""
-
-        date_match = re.search(r'(\d{2}-\d{2}-\d{4})', context)
-        date_str = date_match.group(1) if date_match else ""
-
-        issue_match = re.search(r'(?:Vol|ਅੰਕ)\s*(\d+)', context)
-        issue_num = issue_match.group(1) if issue_match else ""
-
-        file_id = f"{page_type}_{issue_num}_{date_str}" if (issue_num or date_str) else pdf_url
-
-        links.append({
-            "url": pdf_url, "date": date_str, "issue_number": issue_num,
-            "type": page_type, "file_id": file_id,
+        entries.append({
+            "type": doc_type,
+            "issue_number": issue_num,
+            "date": date_str,
+            "drive_url": drive_url,
+            "drive_file_id": file_id,
+            "file_id": f"{doc_type}_{issue_num}_{date_str}",
         })
-    return links
+
+    return entries
 
 
-def download_pdf(url):
+def extract_drive_id(url):
+    """Extract the file ID from a Google Drive URL."""
+    m = re.search(r'/file/d/([a-zA-Z0-9_-]+)', url)
+    return m.group(1) if m else None
+
+
+# ============================================================
+# DOWNLOAD FROM GOOGLE DRIVE
+# ============================================================
+
+def download_from_drive(file_id):
+    """Download a PDF from Google Drive using direct download URL."""
+    download_url = f"https://drive.google.com/uc?id={file_id}&export=download"
+    print(f"    Downloading from Google Drive: {file_id[:20]}...", flush=True)
+
     for attempt in range(1, 4):
         try:
-            req = urllib.request.Request(url, headers=HEADERS)
+            req = urllib.request.Request(download_url, headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+            })
             with urllib.request.urlopen(req, timeout=60) as resp:
-                return resp.read()
+                data = resp.read()
+                content_type = resp.headers.get("Content-Type", "")
+
+                # Google Drive sometimes shows a confirmation page for large files
+                if b"confirm=" in data or b"virus scan warning" in data.lower():
+                    print(f"    Drive confirmation page detected, retrying with confirm...", flush=True)
+                    confirm_match = re.search(rb'confirm=([0-9A-Za-z_-]+)', data)
+                    if confirm_match:
+                        confirm_url = f"{download_url}&confirm={confirm_match.group(1).decode()}"
+                        req2 = urllib.request.Request(confirm_url, headers={
+                            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                        })
+                        with urllib.request.urlopen(req2, timeout=60) as resp2:
+                            data = resp2.read()
+
+                # Verify we got a PDF
+                if data[:4] == b'%PDF' or len(data) > 10000:
+                    print(f"    Downloaded: {len(data):,} bytes", flush=True)
+                    return data
+                else:
+                    print(f"    WARNING: Response doesn't look like a PDF ({len(data)} bytes, type: {content_type})", flush=True)
+                    # Try alternate download method
+                    alt_url = f"https://drive.usercontent.google.com/download?id={file_id}&export=download"
+                    req3 = urllib.request.Request(alt_url, headers={
+                        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
+                    })
+                    with urllib.request.urlopen(req3, timeout=60) as resp3:
+                        data = resp3.read()
+                        if data[:4] == b'%PDF' or len(data) > 10000:
+                            print(f"    Downloaded (alt method): {len(data):,} bytes", flush=True)
+                            return data
+
         except Exception as e:
             print(f"    download attempt {attempt} failed: {e}", flush=True)
             time.sleep(5 * attempt)
+
     return None
 
+
+# ============================================================
+# PDF TEXT EXTRACTION
+# ============================================================
 
 def extract_text_from_pdf(pdf_bytes):
     text_parts = []
@@ -178,6 +179,10 @@ def extract_text_from_pdf(pdf_bytes):
         print(f"    pdfplumber error: {e}", flush=True)
     return "\n\n".join(text_parts), tables_found
 
+
+# ============================================================
+# RULE-BASED PARSING (English + Punjabi)
+# ============================================================
 
 def parse_weather(full_text, tables):
     weather = {"outlook": "", "zone_data": [], "general_advice": ""}
@@ -394,6 +399,10 @@ def parse_advisory(full_text, tables):
     }
 
 
+# ============================================================
+# CONSOLIDATION
+# ============================================================
+
 def load_existing():
     if OUT_PATH.exists():
         try: return json.loads(OUT_PATH.read_text(encoding="utf-8"))
@@ -414,73 +423,66 @@ def merge_advisory(existing, new_issue):
     return True
 
 
+# ============================================================
+# MAIN
+# ============================================================
+
 def main():
     print("=" * 60, flush=True)
-    print("PAU Advisory Fetcher (Playwright + English/Punjabi)", flush=True)
+    print("PAU Advisory Fetcher (Google Drive + English/Punjabi)", flush=True)
     print("=" * 60, flush=True)
+
+    entries = read_links()
+    print(f"\nFound {len(entries)} entries in links.txt", flush=True)
 
     existing = load_existing()
     processed_ids = set(existing.get("processed_ids", []))
     new_count = 0
 
-    for page in PAU_PAGES:
-        print(f"\n--- {page['name']} ---", flush=True)
-
-        html = fetch_page(page["url"])
-        if not html:
-            print("  FAILED to fetch page. Skipping.", flush=True)
+    for entry in entries:
+        fid = entry["file_id"]
+        if fid in processed_ids:
+            print(f"\n  SKIP (already processed): {fid}", flush=True)
             continue
 
-        print(f"  HTML contains '.pdf': {'.pdf' in html.lower()}", flush=True)
+        print(f"\n  Processing: {fid}", flush=True)
+        print(f"    Type: {entry['type']}, Issue: {entry['issue_number']}, Date: {entry['date']}", flush=True)
 
-        links = extract_pdf_links(html, page["type"])
-        print(f"  Found {len(links)} PDF links", flush=True)
-        for l in links[:3]:
-            print(f"    - {l['url']} (issue: {l['issue_number']}, date: {l['date']})", flush=True)
+        pdf_bytes = download_from_drive(entry["drive_file_id"])
+        if not pdf_bytes:
+            print("    FAILED to download. Skipping.", flush=True)
+            continue
 
-        new_links = [l for l in links if l["file_id"] not in processed_ids]
-        print(f"  New (unprocessed): {len(new_links)}", flush=True)
+        raw_text, tables = extract_text_from_pdf(pdf_bytes)
+        if not raw_text.strip():
+            print("    WARNING: No text extracted from PDF. Skipping.", flush=True)
+            continue
+        print(f"    Extracted: {len(raw_text):,} chars, {len(tables)} tables", flush=True)
 
-        for link in new_links[:MAX_ISSUES]:
-            print(f"\n  Processing: {link['url']}", flush=True)
-            print(f"    Issue: {link['issue_number']}, Date: {link['date']}", flush=True)
+        parsed = parse_advisory(raw_text, tables)
+        cc = len(parsed.get("crop_advisory", []))
+        pc = len(parsed.get("pest_alerts", []))
+        tc = len(parsed.get("seasonal_tips", []))
+        print(f"    Parsed: {cc} crops, {pc} pest alerts, {tc} tips", flush=True)
 
-            pdf_bytes = download_pdf(link["url"])
-            if not pdf_bytes:
-                print("    FAILED to download. Skipping.", flush=True)
-                continue
-            print(f"    Downloaded: {len(pdf_bytes):,} bytes", flush=True)
+        issue = {
+            "file_id": fid,
+            "type": entry["type"],
+            "issue_number": entry["issue_number"],
+            "date": entry["date"],
+            "drive_url": entry["drive_url"],
+            "fetched_at": datetime.now(timezone(timedelta(hours=5, minutes=30))).strftime("%Y-%m-%d %H:%M IST"),
+            "weather": parsed["weather"],
+            "crop_advisory": [{"crop": c["crop"], "advice": c["advice"]} for c in parsed["crop_advisory"]],
+            "pest_alerts": parsed["pest_alerts"],
+            "seasonal_tips": parsed["seasonal_tips"],
+        }
 
-            raw_text, tables = extract_text_from_pdf(pdf_bytes)
-            if not raw_text.strip():
-                print("    WARNING: No text extracted. Skipping.", flush=True)
-                continue
-            print(f"    Extracted: {len(raw_text):,} chars, {len(tables)} tables", flush=True)
+        if merge_advisory(existing, issue):
+            new_count += 1
+            print("    Added to consolidated file.", flush=True)
 
-            parsed = parse_advisory(raw_text, tables)
-            cc = len(parsed.get("crop_advisory", []))
-            pc = len(parsed.get("pest_alerts", []))
-            tc = len(parsed.get("seasonal_tips", []))
-            print(f"    Parsed: {cc} crops, {pc} pest alerts, {tc} tips", flush=True)
-
-            issue = {
-                "file_id": link["file_id"],
-                "type": link["type"],
-                "issue_number": link["issue_number"],
-                "date": link["date"],
-                "pdf_url": link["url"],
-                "fetched_at": datetime.now(timezone(timedelta(hours=5, minutes=30))).strftime("%Y-%m-%d %H:%M IST"),
-                "weather": parsed["weather"],
-                "crop_advisory": [{"crop": c["crop"], "advice": c["advice"]} for c in parsed["crop_advisory"]],
-                "pest_alerts": parsed["pest_alerts"],
-                "seasonal_tips": parsed["seasonal_tips"],
-            }
-
-            if merge_advisory(existing, issue):
-                new_count += 1
-                print("    Added to consolidated file.", flush=True)
-
-            time.sleep(3)
+        time.sleep(2)
 
     now_ist = datetime.now(timezone(timedelta(hours=5, minutes=30)))
     existing["last_updated"] = now_ist.strftime("%Y-%m-%d %H:%M:%S IST")

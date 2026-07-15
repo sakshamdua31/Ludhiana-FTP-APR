@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 15
+    timeout-minutes: 20
 
     steps:
       - name: Checkout
@@ -22,7 +22,10 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install pdfplumber
+        run: |
+          pip install pdfplumber playwright
+          python -m playwright install chromium
+          python -m playwright install-deps
 
       - name: Fetch PAU advisories
         run: python scripts/fetch_pau_advisory.py

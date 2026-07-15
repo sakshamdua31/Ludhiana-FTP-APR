@@ -1,6 +1,9 @@
 name: Fetch PAU Advisory
 
 on:
+  push:
+    paths:
+      - 'data/advisory/links.txt'
   schedule:
     - cron: "0 5 * * 3,6"
   workflow_dispatch:
@@ -10,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    timeout-minutes: 20
+    timeout-minutes: 15
 
     steps:
       - name: Checkout
@@ -22,10 +25,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: |
-          pip install pdfplumber playwright
-          python -m playwright install chromium
-          python -m playwright install-deps
+        run: pip install pdfplumber
 
       - name: Fetch PAU advisories
         run: python scripts/fetch_pau_advisory.py

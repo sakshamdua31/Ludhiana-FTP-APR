@@ -27,7 +27,6 @@ except ImportError:
     os.system("python3 -m playwright install chromium")
     from playwright.sync_api import sync_playwright
 
-# --- Config ---
 OUT_PATH = Path("data/advisory/pau_advisory.json")
 MAX_ISSUES = 4
 
@@ -75,10 +74,6 @@ CROP_NAME_MAP = {
 }
 
 
-# ============================================================
-# PAGE FETCHING — uses Playwright (headless browser)
-# ============================================================
-
 def fetch_page(url):
     """Fetch a JS-rendered page using Playwright headless Chromium."""
     print(f"  Launching headless browser for: {url}", flush=True)
@@ -87,38 +82,33 @@ def fetch_page(url):
             with sync_playwright() as p:
                 browser = p.chromium.launch(headless=True)
                 page = browser.new_page()
-                page.goto(url, timeout=30000, wait_until="networkidle")
-                time.sleep(2)  # extra wait for any late JS
+                page.goto(url, timeout=90000, wait_until="domcontentloaded")
+                time.sleep(5)
                 html = page.content()
                 browser.close()
-                if "404 Error" in html and len(html) < 5000:
-                    print(f"  Page returned 404 shell (attempt {attempt})", flush=True)
+                if "404 Error" in html and ".pdf" not in html.lower():
+                    print(f"  Page returned 404 with no PDFs (attempt {attempt})", flush=True)
                     time.sleep(5)
                     continue
+                print(f"  Page loaded: {len(html):,} chars", flush=True)
                 return html
         except Exception as e:
             print(f"  browser attempt {attempt} failed: {e}", flush=True)
-            time.sleep(5 * attempt)
+            time.sleep(10 * attempt)
     return None
 
 
-# ============================================================
-# PDF LINK EXTRACTION
-# ============================================================
-
 def extract_pdf_links(html, page_type):
     links = []
-    # Match href with .pdf — PAU uses various patterns
-    pdf_pattern = re.compile(r'href=["\']([^"\']*?\.pdf)["\']', re.IGNORECASE)
-    # Also check onclick or data attributes
-    pdf_pattern2 = re.compile(r'(?:window\.open|location\.href)\s*[=(]\s*["\']([^"\']*?\.pdf)["\']', re.IGNORECASE)
-
     all_matches = set()
-    for pat in [pdf_pattern, pdf_pattern2]:
+
+    for pat in [
+        re.compile(r'href=["\']([^"\']*?\.pdf)["\']', re.IGNORECASE),
+        re.compile(r'(?:window\.open|location\.href)\s*[=(]\s*["\']([^"\']*?\.pdf)["\']', re.IGNORECASE),
+    ]:
         for m in pat.finditer(html):
             all_matches.add(m.group(1))
 
-    # Also look for links inside <a> tags more broadly
     a_pattern = re.compile(r'<a[^>]*?href=["\']([^"\']*?)["\'][^>]*?>', re.IGNORECASE)
     for m in a_pattern.finditer(html):
         href = m.group(1)
@@ -134,13 +124,8 @@ def extract_pdf_links(html, page_type):
         else:
             pdf_url = pdf_path
 
-        # Extract date from surrounding HTML context
-        # Look for the date near this PDF link
         escaped = re.escape(pdf_path)
-        context_match = re.search(
-            r'.{0,200}' + escaped + r'.{0,200}',
-            html, re.DOTALL
-        )
+        context_match = re.search(r'.{0,300}' + escaped + r'.{0,300}', html, re.DOTALL)
         context = context_match.group(0) if context_match else ""
 
         date_match = re.search(r'(\d{2}-\d{2}-\d{4})', context)
@@ -152,19 +137,11 @@ def extract_pdf_links(html, page_type):
         file_id = f"{page_type}_{issue_num}_{date_str}" if (issue_num or date_str) else pdf_url
 
         links.append({
-            "url": pdf_url,
-            "date": date_str,
-            "issue_number": issue_num,
-            "type": page_type,
-            "file_id": file_id,
+            "url": pdf_url, "date": date_str, "issue_number": issue_num,
+            "type": page_type, "file_id": file_id,
         })
-
     return links
 
-
-# ============================================================
-# PDF DOWNLOAD & TEXT EXTRACTION
-# ============================================================
 
 def download_pdf(url):
     for attempt in range(1, 4):
@@ -202,20 +179,15 @@ def extract_text_from_pdf(pdf_bytes):
     return "\n\n".join(text_parts), tables_found
 
 
-# ============================================================
-# RULE-BASED PARSING (English + Punjabi)
-# ============================================================
-
 def parse_weather(full_text, tables):
     weather = {"outlook": "", "zone_data": [], "general_advice": ""}
 
-    outlook_patterns = [
+    for pat in [
         r'(?:WEATHER\s*(?:CROP\s*)?OUTLOOK[:\s]*)(.*?)(?=\n\s*CROPS?[:\s]|\n\s*[A-Z][a-z]+\s*:)',
         r'(?:Weather\s*(?:Crop\s*)?Outlook[:\s]*)(.*?)(?=\n\s*Crops?[:\s]|\n\s*[A-Z][a-z]+\s*:)',
         r'(?:ਮੌਸਮ\s*(?:ਫ਼ਸਲ\s*)?ਸੰਭਾਵਨਾ[:\s]*)(.*?)(?=\n\s*ਫ਼ਸਲਾਂ[:\s])',
         r'(?:ਮੌਸਮ[:\s]*)(.*?)(?=\n\s*ਫ਼ਸਲ)',
-    ]
-    for pat in outlook_patterns:
+    ]:
         m = re.search(pat, full_text, re.DOTALL | re.IGNORECASE)
         if m:
             weather["outlook"] = m.group(1).strip()
@@ -248,7 +220,6 @@ def parse_weather(full_text, tables):
         if m:
             weather["general_advice"] = m.group(1).strip()
             break
-
     return weather
 
 
@@ -414,23 +385,21 @@ def extract_seasonal_tips(full_text):
 
 
 def parse_advisory(full_text, tables):
+    crop_adv = parse_crop_sections(full_text)
     return {
         "weather": parse_weather(full_text, tables),
-        "crop_advisory": parse_crop_sections(full_text),
-        "pest_alerts": extract_pest_alerts(parse_crop_sections(full_text)),
+        "crop_advisory": crop_adv,
+        "pest_alerts": extract_pest_alerts(crop_adv),
         "seasonal_tips": extract_seasonal_tips(full_text),
     }
 
-
-# ============================================================
-# CONSOLIDATION
-# ============================================================
 
 def load_existing():
     if OUT_PATH.exists():
         try: return json.loads(OUT_PATH.read_text(encoding="utf-8"))
         except json.JSONDecodeError: pass
-    return {"source": "Punjab Agricultural University (PAU), Ludhiana", "website": "https://pau.edu", "last_updated": "", "processed_ids": [], "issues": []}
+    return {"source": "Punjab Agricultural University (PAU), Ludhiana", "website": "https://pau.edu",
+            "last_updated": "", "processed_ids": [], "issues": []}
 
 
 def merge_advisory(existing, new_issue):
@@ -462,11 +431,12 @@ def main():
             print("  FAILED to fetch page. Skipping.", flush=True)
             continue
 
-        # Debug: save HTML length and check for PDF links
-        print(f"  Got {len(html):,} chars of HTML", flush=True)
+        print(f"  HTML contains '.pdf': {'.pdf' in html.lower()}", flush=True)
 
         links = extract_pdf_links(html, page["type"])
         print(f"  Found {len(links)} PDF links", flush=True)
+        for l in links[:3]:
+            print(f"    - {l['url']} (issue: {l['issue_number']}, date: {l['date']})", flush=True)
 
         new_links = [l for l in links if l["file_id"] not in processed_ids]
         print(f"  New (unprocessed): {len(new_links)}", flush=True)

@@ -1,8 +1,791 @@
 {
   "source": "Punjab Agricultural University (PAU), Ludhiana",
   "website": "https://pau.edu",
-  "last_updated": "2026-07-15 16:49:41 IST",
-  "processed_ids": [],
-  "issues": [],
-  "total_issues": 0
+  "last_updated": "2026-07-15 17:22:58 IST",
+  "processed_ids": [
+    "agro_advisory_461_01-07-2026",
+    "agro_advisory_460_24-06-2026"
+  ],
+  "issues": [
+    {
+      "file_id": "agro_advisory_460_24-06-2026",
+      "type": "agro_advisory",
+      "issue_number": "460",
+      "date": "24-06-2026",
+      "drive_url": "https://drive.google.com/file/d/1Z8njVh1Xi5Zd3g14VvDUPLpf2lD1_yaX/view",
+      "fetched_at": "2026-07-15 17:22 IST",
+      "weather": {
+        "outlook": "Cloudy sky with possibility of light to moderate rain during the next 4-5 days. Farmers are advised to withhold irrigation in sugarcane, cotton, maize, vegetable\nfields and orchards. Keep proper drainage in the field to avoid water stagnation. Remove excess rainwater after rainfall. Application of chemicals/fertilizers advised under crop specific advisories\nshould be adjusted as per possible rainfall in the area.",
+        "zone_data": [
+          {
+            "zone": "sub-montaneous zone",
+            "max_temp": "30 - 37",
+            "min_temp": "27 - 28",
+            "morning_humidity": "70 - 85",
+            "evening_humidity": "40 - 50"
+          },
+          {
+            "zone": "central plain zone",
+            "max_temp": "30 - 37",
+            "min_temp": "27 - 29",
+            "morning_humidity": "70 - 85",
+            "evening_humidity": "40 - 50"
+          },
+          {
+            "zone": "south-western zone",
+            "max_temp": "30 - 40",
+            "min_temp": "25 - 29",
+            "morning_humidity": "55 - 85",
+            "evening_humidity": "25 - 50"
+          }
+        ],
+        "general_advice": "Farmers are advised to withhold irrigation in sugarcane, cotton, maize, vegetable\nfields and orchards."
+      },
+      "crop_advisory": [
+        {
+          "crop": "Rice",
+          "advice": [
+            {
+              "category": "fertilizer",
+              "detail": "sulphate in 100 litres of water) 2-3 times at weekly intervals."
+            },
+            {
+              "category": "weed_management",
+              "detail": "For control of weeds, use 60 g Sathi 10 WP (Pyrazosulfuron) or 1200 ml of any recommended formulations of Butachlor 50 EC\nor Butachlor 50 EW or 500 ml of Anilofos 30 EC or Pretilachlor 50 EC @ 600 ml or Rifit Plus 37 EW 750 ml or Stomp 30 EC @ 1000-1200 ml/acre by mixing with 60 kg of sand. Broadcast\nany one of the herbicides uniformly in standing water within 2-3 days of transplanting."
+            },
+            {
+              "category": "pest_management",
+              "detail": "To prevent paddy dwarfing disease, pull out the infected plants early and dispose of them properly, such\nas by burying them deep in the soil. To manage the initial infection and further spread of this disease, regularly monitor the nursery and the fields for white-backed plant hoppers. If the\npresence of these hoppers is confirmed, apply insecticides—such as 60 g Flonicamid (Ulala 50 WG) or 80 g Dinotefuran (Token/Oseen/Dominant 20 SG), or 120 g Pymetrozine (Chess 50\nWG) in 100 liters of water per acre."
+            },
+            {
+              "category": "fertilizer",
+              "detail": "Application of chemicals/fertilizers should adjusted as per possible rainfall in the area."
+            },
+            {
+              "category": "irrigation",
+              "detail": "Withhold irrigation in next 4-5 days. Keep proper drainage in the field to avoid water stagnation."
+            },
+            {
+              "category": "general",
+              "detail": "Remove excess rainwater after rainfall. Earthing up of the sugarcane crop should be completed\nwhen weather become clear if not done earlier."
+            },
+            {
+              "category": "pest_management",
+              "detail": "The attack of top borer can be checked by applying 10 kg Ferterra 0.4 GR or 12 kg Furadan/ Diafuran/ Furacab/ Carbocil/ Fury encapsulated 3"
+            }
+          ]
+        },
+        {
+          "crop": "Sugarcane",
+          "advice": [
+            {
+              "category": "pest_management",
+              "detail": "G (carbofuran) at the base of the shoots upto first week of July."
+            },
+            {
+              "category": "irrigation",
+              "detail": "Earth up slightly to check the granules from flowing with the irrigation water and irrigate the crop immediately."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Pheromone\ntraps @ 10 per acre can also be used along with the recommended Tricho-card application for management of this pest."
+            },
+            {
+              "category": "fertilizer",
+              "detail": "Application of chemicals/fertilizers should be adjusted as per possible\nrainfall in the area."
+            },
+            {
+              "category": "general",
+              "detail": "Cotton crop is highly sensitive to standing water during early growth stages."
+            },
+            {
+              "category": "irrigation",
+              "detail": "Keep proper drainage in the field to drain out standing water after rainfall. After rains or irrigation some plants\nshow wilting."
+            },
+            {
+              "category": "pest_management",
+              "detail": "This is Parawilt which can be checked by spraying cobalt chloride @ 10 mg/ litre of water on the affected plants at the initial stage of wilting. Regularly monitor the crop for the\nincidence of cotton leaf curl virus."
+            },
+            {
+              "category": "general",
+              "detail": "Uproot and destroy the affected plant from time to time."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Regularly monitor the whitefly infestation on cotton crop and also on alternate hosts like brinjal,\npotato, tomato, okra, moong, mash and guar. Spray the crop when its population reached 6 whiteflies per leaf in the upper canopy before 10 AM with 400 ml Sefina 50 DC (afidopyropen) or"
+            }
+          ]
+        },
+        {
+          "crop": "Cotton",
+          "advice": [
+            {
+              "category": "pest_management",
+              "detail": "60 g Osheen 20 SG (dinotefuran) or 200 g Polo/Craze/Ruby/Ludo/Shoku 50 WP (diafenthiuron) or 500 ml Lano/Daita 10 EC (pyriproxyfen) or 200 ml Oberon/Voltage 22.9 SC (spiromesifen)\nor 80 g Ulala 50 WG (flonicamid) or 800 ml Fosmite/E-mite/Volthion/ Gold Mit 50 EC or 1 litre Nimbecidine/Achook or 1200 ml PAU Homemade neem extract in 125-150 litres of water/acre. In case severe attack of thrips spray the crop with 170 ml Delegate 11.7 SC (spinetoram) or 500 ml Curacron/Celron 50 EC (profenofos) in 100 litres of water per acre."
+            },
+            {
+              "category": "fertilizer",
+              "detail": "Application of\nchemicals/fertilizers should be adjusted as per possible rainfall in the area."
+            },
+            {
+              "category": "irrigation",
+              "detail": "Keep proper drainage in the field to avoid water stagnation."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Do not allow the rain water to stand in the main crop as this crop is highly sensitive to standing water and promotes bacterial stalk\nrot."
+            },
+            {
+              "category": "weed_management",
+              "detail": "Apply the below-mentioned fertilizers and chemical controls for weeds and pests once the weather clears after the possible rainfall over the next 4–5 days."
+            },
+            {
+              "category": "fertilizer",
+              "detail": "Apply second dose of nitrogen\n(37 or 25 kg per acre, respectively for the long and medium/short duration cultivars) at knee high stage."
+            },
+            {
+              "category": "weed_management",
+              "detail": "For control of weeds, use Atrazine 50 WP as pre-emergence application @ 500g per\nacre on light textured soils and @ 800 g per acre on heavy textured soils by using 200 litres of water."
+            },
+            {
+              "category": "pest_management",
+              "detail": "For effective control of mixed weed flora, spray 105 ml per acre Laudis 420 SC\n(tembotrione) in 150 litres of water at 20 days after sowing. Maize borer feeds on growing points of plants and forms dead hearts. Control this pest by spraying 30 ml Coragen 18.5 SC"
+            }
+          ]
+        },
+        {
+          "crop": "Maize",
+          "advice": [
+            {
+              "category": "general",
+              "detail": "(chlorantraniliprole) in 60 litres of water per acre."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Spray work should be initiated when the crop is 2-3 weeks old. Maize borer can also be controlled by using Trichogramma, a bioagent as\nper PAU recommendation. To control attack of fall armyworm, spray the grain crop with Coragen 18.5 SC (chlorantraniliprole) @ 0.4 ml or Delegate 11.7 SC (spinetoram) @ 0.5 ml or Missile\n5 SG (emamectin benzoate) @ 0.4 g per litre of water. Direct the spray nozzle towards the whorl, for its effective control. If the infestation is in patches or the crop is more than 40 days old\nand spraying is difficult, apply soil-insecticide mixture (about half gram) in the whorls of the infested plants. To prepare the soil–insecticide mixture, add 5 ml of Coragen 18.5 SC or Delegate\n11.7 SC or 5 g of Missile 5 SG in 10 ml of water and mix well in one kg of soil."
+            }
+          ]
+        },
+        {
+          "crop": "Groundnut",
+          "advice": [
+            {
+              "category": "variety_sowing",
+              "detail": "Complete the sowing of rainfed crop."
+            },
+            {
+              "category": "pest_management",
+              "detail": "The seeds must be treated with fungicide for the control of collar rot disease."
+            },
+            {
+              "category": "general",
+              "detail": "For this purpose, use 2ml Neonix or 1.5g Seedex or 5 g\nOilseed: Thiram or 3 g Indofil M 45 per kg of kernels."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Neonix will control white grubs and termites."
+            },
+            {
+              "category": "fertilizer",
+              "detail": "Apply 13 kg urea, 50 kg single superphosphate, and 17 kg muriate of potash per acre at the time\nof sowing."
+            }
+          ]
+        },
+        {
+          "crop": "Mash",
+          "advice": [
+            {
+              "category": "irrigation",
+              "detail": "Sowing of mash (Mash 883, Mash 114, Mash 338) should be completed during the period and in sub-mountainous region sow the irrigated crop from 15 to 25 July."
+            }
+          ]
+        },
+        {
+          "crop": "Pulses",
+          "advice": [
+            {
+              "category": "variety_sowing",
+              "detail": "Moong: Sowing of moong (ML 1808, ML 2056 and ML 818) should be completed during the second fortnight of July as delayed sowing result in lower yields. Adjust the sowing as per\npossible rainfall in the area during the week to avoid poor germination. Sowing of kharif fodders at regular intervals should be continued for regular supply of green fodders."
+            },
+            {
+              "category": "general",
+              "detail": "Sorghum may be sown for providing fodders late in the kharif season. Cultivate non-"
+            }
+          ]
+        },
+        {
+          "crop": "Fodder",
+          "advice": [
+            {
+              "category": "variety_sowing",
+              "detail": "legume fodders in mixture with legume fodders like cowpea or guara Adjust sowing as weather during the period."
+            },
+            {
+              "category": "general",
+              "detail": "."
+            },
+            {
+              "category": "irrigation",
+              "detail": "• Adjust irrigation in vegetables during the next 4-5 days in view of possible widespread rainfall in the region."
+            },
+            {
+              "category": "variety_sowing",
+              "detail": "Adjust sowing/transplanting of vegetables and use of chemicals also as per the\nweather. • Okra: Sow 4-6 kg seed per acre and soak the seed in water for 24 hours before sowing."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Start sowing of Punjab Suhawani and Punjab Lalima varieties of okra which are tolerant to yellow\nvein mosaic virus."
+            }
+          ]
+        },
+        {
+          "crop": "Vegetables",
+          "advice": [
+            {
+              "category": "variety_sowing",
+              "detail": "• Brinjal: Sow 300 g seed of PBHR-41, PBHR-42, PBH-3, PBH-4, PBH-5, PBH-6, Punjab Raunak, Punjab Bharpoor and Punjab Himmat hybrids/varieties of Brinjal in one marla bed area\nto obtain seedlings for transplanting in one acre."
+            },
+            {
+              "category": "pest_management",
+              "detail": "To check fruit and shoot borer attack in brinjal, spray 80 ml Coragen 18.5 SC or 80 g Proclaim 5SG in 100-125 litres of water per acre."
+            },
+            {
+              "category": "variety_sowing",
+              "detail": "• Cauliflower: Transplanting of suitable early varieties of cauliflower should be done at 45 x 30 cm spacing. • Radish: Sow radish variety PusaChetki, Punjab Pasand in this month."
+            },
+            {
+              "category": "general",
+              "detail": "Roots of Pusa Chetki are small to medium, thick white in colour and rat tailed."
+            },
+            {
+              "category": "variety_sowing",
+              "detail": "Use 4-5 kg seed for sowing one\nacre by keeping 45 cm spacing between ridges and 7.5 cm between plants."
+            },
+            {
+              "category": "general",
+              "detail": "07.07.2026\n• Weather would be ideal time for planting of evergreen fruit plants such as citrus, mango, litchi, guava, loquat, ber, amla and papaya."
+            },
+            {
+              "category": "variety_sowing",
+              "detail": "It is also suitable time for the transplanting of papaya\nseedlings in the fields."
+            },
+            {
+              "category": "irrigation",
+              "detail": "• Drain out excess rain water from the orchards as it may cause severe damage to fruit plants particularly citrus and papaya."
+            }
+          ]
+        },
+        {
+          "crop": "Fruits",
+          "advice": [
+            {
+              "category": "general",
+              "detail": "• The vacant land in between the fruit plants may be put under kharif pulses like moong, mash, moth or jantar, etc. for green manuring or as an inter-crop."
+            },
+            {
+              "category": "pest_management",
+              "detail": "• To control fruit fly in guava, fix 16 PAU fruit fly traps/ acre and recharge the same if required. Continuously remove and burry the infected fruits from orchards. Bagging of individual\nmature green and hard fruits of guava with white coloured non-woven bags will protect the fruits from fruit fly damage. Regularly monitor and harvest the ripening fruits."
+            },
+            {
+              "category": "general",
+              "detail": "Keep animals indoors or in a sturdy shelter during severe weather like rain, thunderstorms, lightning, hail, or strong winds. Keep all the dairy animals in shade and provide wallowing\nAnimal\n(particularly for buffaloes) or bath 1-2 times daily to avoid the heat stress. Provide clean and cold drinking water."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Save your animals from ticks, lice and flies as these parasites suck blood,\nHusbandry:\ncause irritation and spread diseases."
+            },
+            {
+              "category": "general",
+              "detail": "Use butox or amitraz 2-3 ml/liter water for use on animals or dairy shed if ticks are more repeat it after 10-15 days during humid season. Gramin Krishi Musam Sewa, Ludhiana"
+            }
+          ]
+        }
+      ],
+      "pest_alerts": [
+        {
+          "crop": "Rice",
+          "pest_name": "Plant Hopper",
+          "severity": "medium",
+          "detail": "To prevent paddy dwarfing disease, pull out the infected plants early and dispose of them properly, such\nas by burying them deep in the soil. To manage the initial infection and further spread of this disease, regularly monitor the nursery and the fields for white-backed plant hoppers. If the\npresence of these hoppers is confirmed, apply insecticides—such as 60 g Flonicamid (Ulala 50 WG) or 80 g Dinotefuran (Token/Oseen/Dominant 20 SG), or 120 g Pymetrozine (Chess 50\nWG) in 100 liters of water per acre."
+        },
+        {
+          "crop": "Rice",
+          "pest_name": "Top Borer",
+          "severity": "monitoring",
+          "detail": "The attack of top borer can be checked by applying 10 kg Ferterra 0.4 GR or 12 kg Furadan/ Diafuran/ Furacab/ Carbocil/ Fury encapsulated 3"
+        },
+        {
+          "crop": "Sugarcane",
+          "pest_name": "General pest/disease",
+          "severity": "monitoring",
+          "detail": "G (carbofuran) at the base of the shoots upto first week of July."
+        },
+        {
+          "crop": "Sugarcane",
+          "pest_name": "General pest/disease",
+          "severity": "monitoring",
+          "detail": "Pheromone\ntraps @ 10 per acre can also be used along with the recommended Tricho-card application for management of this pest."
+        },
+        {
+          "crop": "Sugarcane",
+          "pest_name": "Leaf Curl Virus",
+          "severity": "medium",
+          "detail": "This is Parawilt which can be checked by spraying cobalt chloride @ 10 mg/ litre of water on the affected plants at the initial stage of wilting. Regularly monitor the crop for the\nincidence of cotton leaf curl virus."
+        },
+        {
+          "crop": "Sugarcane",
+          "pest_name": "Whitefly",
+          "severity": "medium",
+          "detail": "Regularly monitor the whitefly infestation on cotton crop and also on alternate hosts like brinjal,\npotato, tomato, okra, moong, mash and guar. Spray the crop when its population reached 6 whiteflies per leaf in the upper canopy before 10 AM with 400 ml Sefina 50 DC (afidopyropen) or"
+        },
+        {
+          "crop": "Cotton",
+          "pest_name": "Thrips",
+          "severity": "high",
+          "detail": "60 g Osheen 20 SG (dinotefuran) or 200 g Polo/Craze/Ruby/Ludo/Shoku 50 WP (diafenthiuron) or 500 ml Lano/Daita 10 EC (pyriproxyfen) or 200 ml Oberon/Voltage 22.9 SC (spiromesifen)\nor 80 g Ulala 50 WG (flonicamid) or 800 ml Fosmite/E-mite/Volthion/ Gold Mit 50 EC or 1 litre Nimbecidine/Achook or 1200 ml PAU Homemade neem extract in 125-150 litres of water/acre. In case severe attack of thrips spray the crop with 170 ml Delegate 11.7 SC (spinetoram) or 500 ml Curacron/Celron 50 EC (profenofos) in 100 litres of water per acre."
+        },
+        {
+          "crop": "Cotton",
+          "pest_name": "Rot",
+          "severity": "monitoring",
+          "detail": "Do not allow the rain water to stand in the main crop as this crop is highly sensitive to standing water and promotes bacterial stalk\nrot."
+        },
+        {
+          "crop": "Cotton",
+          "pest_name": "General pest/disease",
+          "severity": "monitoring",
+          "detail": "For effective control of mixed weed flora, spray 105 ml per acre Laudis 420 SC\n(tembotrione) in 150 litres of water at 20 days after sowing. Maize borer feeds on growing points of plants and forms dead hearts. Control this pest by spraying 30 ml Coragen 18.5 SC"
+        },
+        {
+          "crop": "Maize",
+          "pest_name": "Fall Armyworm",
+          "severity": "monitoring",
+          "detail": "Spray work should be initiated when the crop is 2-3 weeks old. Maize borer can also be controlled by using Trichogramma, a bioagent as\nper PAU recommendation. To control attack of fall armyworm, spray the grain crop with Coragen 18.5 SC (chlorantraniliprole) @ 0.4 ml or Delegate 11.7 SC (spinetoram) @ 0.5 ml or Missile\n5 SG (emamectin benzoate) @ 0.4 g per litre of water. Direct the spray nozzle towards the whorl, for its effective control. If the infestation is in patches or the crop is more than 40 days old\nand spraying is difficult, apply soil-insecticide mixture (about half gram) in the whorls of the infested plants. To prepare the soil–insecticide mixture, add 5 ml of Coragen 18.5 SC or Delegate\n11.7 SC or 5 g of Missile 5 SG in 10 ml of water and mix well in one kg of soil."
+        },
+        {
+          "crop": "Groundnut",
+          "pest_name": "Rot",
+          "severity": "monitoring",
+          "detail": "The seeds must be treated with fungicide for the control of collar rot disease."
+        },
+        {
+          "crop": "Groundnut",
+          "pest_name": "Mite",
+          "severity": "monitoring",
+          "detail": "Neonix will control white grubs and termites."
+        },
+        {
+          "crop": "Fodder",
+          "pest_name": "General pest/disease",
+          "severity": "monitoring",
+          "detail": "Start sowing of Punjab Suhawani and Punjab Lalima varieties of okra which are tolerant to yellow\nvein mosaic virus."
+        },
+        {
+          "crop": "Vegetables",
+          "pest_name": "Shoot Borer",
+          "severity": "monitoring",
+          "detail": "To check fruit and shoot borer attack in brinjal, spray 80 ml Coragen 18.5 SC or 80 g Proclaim 5SG in 100-125 litres of water per acre."
+        },
+        {
+          "crop": "Fruits",
+          "pest_name": "Rot",
+          "severity": "medium",
+          "detail": "• To control fruit fly in guava, fix 16 PAU fruit fly traps/ acre and recharge the same if required. Continuously remove and burry the infected fruits from orchards. Bagging of individual\nmature green and hard fruits of guava with white coloured non-woven bags will protect the fruits from fruit fly damage. Regularly monitor and harvest the ripening fruits."
+        },
+        {
+          "crop": "Fruits",
+          "pest_name": "General pest/disease",
+          "severity": "monitoring",
+          "detail": "Save your animals from ticks, lice and flies as these parasites suck blood,\nHusbandry:\ncause irritation and spread diseases."
+        }
+      ],
+      "seasonal_tips": [
+        {
+          "topic": "Drainage",
+          "detail": "Keep proper drainage in the field to avoid water stagnation."
+        },
+        {
+          "topic": "Chemical Application Timing",
+          "detail": "Application of chemicals/fertilizers advised under crop specific advisories\nshould be adjusted as per possible rainfall in the area."
+        },
+        {
+          "topic": "Rainwater Management",
+          "detail": "Remove excess rainwater after rainfall."
+        }
+      ]
+    },
+    {
+      "file_id": "agro_advisory_461_01-07-2026",
+      "type": "agro_advisory",
+      "issue_number": "461",
+      "date": "01-07-2026",
+      "drive_url": "https://drive.google.com/file/d/1FU9ylPDfELCZFcg_3rqBAsetBKPXR-Xq/view",
+      "fetched_at": "2026-07-15 17:22 IST",
+      "weather": {
+        "outlook": "Partly cloudy sky with possibility of light to moderate rain in Punjab during the next 4-5 days. Farmers are advised to adjust irrigation in sugarcane, cotton,\nmaize, vegetable fields and orchards as per rainfall in the area. Keep proper drainage in the field to avoid water stagnation. Remove excess rainwater after rainfall. Application of\nchemicals/fertilizers advised under crop specific advisories should be adjusted as per possible rainfall in the area.",
+        "zone_data": [
+          {
+            "zone": "sub-montaneous zone",
+            "max_temp": "33 - 36",
+            "min_temp": "27 - 29",
+            "morning_humidity": "55 - 75",
+            "evening_humidity": "25 - 40"
+          },
+          {
+            "zone": "central plain zone",
+            "max_temp": "33 - 35",
+            "min_temp": "26 - 29",
+            "morning_humidity": "55 - 60",
+            "evening_humidity": "25 - 30"
+          },
+          {
+            "zone": "south-western zone",
+            "max_temp": "34 - 38",
+            "min_temp": "26 - 29",
+            "morning_humidity": "55 - 75",
+            "evening_humidity": "25 - 40"
+          }
+        ],
+        "general_advice": "Farmers are advised to adjust irrigation in sugarcane, cotton,\nmaize, vegetable fields and orchards as per rainfall in the area."
+      },
+      "crop_advisory": [
+        {
+          "crop": "Rice",
+          "advice": [
+            {
+              "category": "weed_management",
+              "detail": "(Pyrazosulfuron) or 1200 ml of any recommended formulations of Butachlor 50 EC or Butachlor 50 EW or 500 ml of Anilofos 30 EC or Pretilachlor 50 EC @ 600 ml or Rifit Plus 37 EW 750\nml or Stomp 30 EC @ 1000-1200 ml/acre by mixing with 60 kg of sand. Broadcast any one of the herbicides uniformly in standing water within 2-3 days of transplanting."
+            },
+            {
+              "category": "pest_management",
+              "detail": "To prevent paddy\ndwarfing disease, pull out the infected plants early and dispose of them properly, such as by burying them deep in the soil. To manage the initial infection and further spread of this disease,\nregularly monitor the nursery and the fields for white-backed plant hoppers. If the presence of these hoppers is confirmed, apply insecticides—such as 60 g Flonicamid (Ulala 50 WG) or 80\ng Dinotefuran (Token/Oseen/Dominant 20 SG), or 120 g Pymetrozine (Chess 50 WG) in 100 liters of water per acre."
+            },
+            {
+              "category": "fertilizer",
+              "detail": "Application of chemicals/fertilizers should be adjusted as per possible\nrainfall in the area."
+            },
+            {
+              "category": "irrigation",
+              "detail": "Keep proper drainage in the field to avoid water stagnation."
+            },
+            {
+              "category": "general",
+              "detail": "Remove excess rainwater after rainfall."
+            },
+            {
+              "category": "pest_management",
+              "detail": "The attack of top borer can be checked by applying 10 kg Ferterra 0.4 GR or 12 kg Furadan/\nDiafuran/ Furacab/ Carbocil/ Fury encapsulated 3 G (carbofuran) at the base of the shoots upto first week of July."
+            },
+            {
+              "category": "irrigation",
+              "detail": "Earth up slightly to check the granules from flowing with the irrigation water"
+            }
+          ]
+        },
+        {
+          "crop": "Sugarcane",
+          "advice": [
+            {
+              "category": "irrigation",
+              "detail": "and irrigate the crop immediately."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Pheromone traps @ 10 per acre can also be used along with the recommended Tricho-card application for management of this pest."
+            },
+            {
+              "category": "fertilizer",
+              "detail": "Application of\nchemicals/fertilizers should be adjusted as per possible rainfall in the area."
+            },
+            {
+              "category": "general",
+              "detail": "Cotton crop is highly vulnerable to standing water during its early growth stages."
+            },
+            {
+              "category": "irrigation",
+              "detail": "Ensure proper field drainage to remove excess water after rainfall. Following rains or irrigation, some plants\nmay exhibit wilting symptoms."
+            },
+            {
+              "category": "pest_management",
+              "detail": "This is Parawilt which can be checked by spraying cobalt chloride @ 10 mg/ litre of water on the affected plants at the initial stage of wilting. Regularly monitor\nthe crop for the incidence of cotton leaf curl virus."
+            },
+            {
+              "category": "general",
+              "detail": "Uproot and destroy the affected plant from time to time."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Regularly monitor the whitefly infestation on cotton crop and also on alternate\nhosts like brinjal, potato, tomato, okra, moong, mash and guar. Spray the crop when its population reached 6 whiteflies per leaf in the upper canopy before 10 AM with 400 ml Sefina 50 DC"
+            }
+          ]
+        },
+        {
+          "crop": "Cotton",
+          "advice": [
+            {
+              "category": "pest_management",
+              "detail": "(afidopyropen) or 60 g Osheen 20 SG (dinotefuran) or 200 g Polo/Craze/Ruby/Ludo/Shoku 50 WP (diafenthiuron) or 500 ml Lano/Daita 10 EC (pyriproxyfen) or 200 ml Oberon/Voltage 22.9\nSC (spiromesifen) or 80 g Ulala 50 WG (flonicamid) or 800 ml Fosmite/E-mite/Volthion/ Gold Mit 50 EC or 1 litre Nimbecidine/Achook or 1200 ml PAU Homemade neem extract in 125-\n150 litres of water/acre. In case severe attack of thrips spray the crop with 170 ml Delegate 11.7 SC (spinetoram) or 500 ml Curacron/Celron 50 EC (profenofos) in 100 litres of water per acre."
+            },
+            {
+              "category": "fertilizer",
+              "detail": "Application of chemicals/fertilizers should be adjusted as per possible rainfall in the area."
+            },
+            {
+              "category": "irrigation",
+              "detail": "Keep proper drainage in the field to avoid water stagnation."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Do not allow the rain water to stand in the main crop as this crop is highly sensitive to standing water and promotes bacterial stalk\nrot."
+            },
+            {
+              "category": "weed_management",
+              "detail": "Apply the below-mentioned fertilizers and chemical controls for weeds and pests once the weather clears after the rainfall."
+            },
+            {
+              "category": "fertilizer",
+              "detail": "Apply second dose of nitrogen (37 or 25 kg per acre, respectively\nfor the long and medium/short duration cultivars) at knee high stage."
+            },
+            {
+              "category": "weed_management",
+              "detail": "For control of weeds, use Atrazine 50 WP as pre-emergence application @ 500g per acre on light textured soils and @\n800 g per acre on heavy textured soils by using 200 litres of water."
+            },
+            {
+              "category": "pest_management",
+              "detail": "For effective control of mixed weed flora, spray 105 ml per acre Laudis 420 SC (tembotrione) in 150 litres of water at 20\ndays after sowing. Maize borer feeds on growing points of plants and forms dead hearts. Control this pest by spraying 30 ml Coragen 18.5 SC (chlorantraniliprole) in 60 litres of water per"
+            }
+          ]
+        },
+        {
+          "crop": "Maize",
+          "advice": [
+            {
+              "category": "general",
+              "detail": "acre."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Spray work should be initiated when the crop is 2-3 weeks old. Maize borer can also be controlled by using Trichogramma, a bioagent as per PAU recommendation. To control attack of\nfall armyworm, spray the grain crop with Coragen 18.5 SC (chlorantraniliprole) @ 0.4 ml or Delegate 11.7 SC (spinetoram) @ 0.5 ml or Missile 5 SG (emamectin benzoate) @ 0.4 g per litre\nof water. Direct the spray nozzle towards the whorl, for its effective control. If the infestation is in patches or the crop is more than 40 days old and spraying is difficult, apply soil-insecticide\nmixture (about half gram) in the whorls of the infested plants. To prepare the soil–insecticide mixture, add 5 ml of Coragen 18.5 SC or Delegate 11.7 SC or 5 g of Missile 5 SG in 10 ml of\nwater and mix well in one kg of soil."
+            },
+            {
+              "category": "irrigation",
+              "detail": "Oilseed: Groundnut: Keep proper drainage in the field to avoid water stagnation after rainfall."
+            }
+          ]
+        },
+        {
+          "crop": "Mash",
+          "advice": [
+            {
+              "category": "irrigation",
+              "detail": "Keep proper drainage in the field to avoid water stagnation."
+            },
+            {
+              "category": "general",
+              "detail": "Remove excess water after rainfall."
+            }
+          ]
+        },
+        {
+          "crop": "Pulses",
+          "advice": [
+            {
+              "category": "variety_sowing",
+              "detail": "Moong: Sowing of moong (ML 1808, ML 2056 and ML 818) should be completed during the second fortnight of July as delayed sowing result in lower yields. Adjust the sowing as per\npossible rainfall in the area during the week to avoid poor germination. Sowing of kharif fodders at regular intervals should be continued for regular supply of green fodders."
+            },
+            {
+              "category": "general",
+              "detail": "Sorghum may be sown for providing fodders late in the kharif season. Cultivate non-"
+            }
+          ]
+        },
+        {
+          "crop": "Fodder",
+          "advice": [
+            {
+              "category": "variety_sowing",
+              "detail": "legume fodders in mixture with legume fodders like cowpea or guara Adjust sowing as weather during the period."
+            },
+            {
+              "category": "general",
+              "detail": "."
+            },
+            {
+              "category": "irrigation",
+              "detail": "• Adjust irrigation in vegetables as per rainfall and soil moisture conditions during the next 4-5 days."
+            },
+            {
+              "category": "variety_sowing",
+              "detail": "Adjust sowing/transplanting of vegetables and use of chemicals also as per the weather. • Okra: Sow 4-6 kg seed per acre and soak the seed in water for 24 hours before sowing."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Start sowing of Punjab Suhawani and Punjab Lalima varieties of okra which are tolerant to yellow\nvein mosaic virus."
+            },
+            {
+              "category": "variety_sowing",
+              "detail": "• Brinjal: Sow 300 g seed of PBHR-41, PBHR-42, PBH-3, PBH-4, PBH-5, PBH-6, Punjab Raunak, Punjab Bharpoor and Punjab Himmat hybrids/varieties of Brinjal in one marla bed area"
+            }
+          ]
+        },
+        {
+          "crop": "Vegetables",
+          "advice": [
+            {
+              "category": "variety_sowing",
+              "detail": "to obtain seedlings for transplanting in one acre."
+            },
+            {
+              "category": "pest_management",
+              "detail": "To check fruit and shoot borer attack in brinjal, spray 80 ml Coragen 18.5 SC or 80 g Proclaim 5SG in 100-125 litres of water per acre."
+            },
+            {
+              "category": "variety_sowing",
+              "detail": "• Cauliflower: Transplanting of suitable early varieties of cauliflower should be done at 45 x 30 cm spacing. • Radish: Sow radish variety Pusa Chetki, Punjab Pasand in this month."
+            },
+            {
+              "category": "general",
+              "detail": "Roots of Pusa Chetki are small to medium, thick white in colour and rat tailed."
+            },
+            {
+              "category": "variety_sowing",
+              "detail": "Use 4-5 kg seed for sowing one\nacre by keeping 45 cm spacing between ridges and 7.5 cm between plants."
+            },
+            {
+              "category": "general",
+              "detail": "14.07.2026\n• Weather would be ideal time for planting of evergreen fruit plants such as citrus, mango, litchi, guava, loquat, ber, amla and papaya."
+            },
+            {
+              "category": "variety_sowing",
+              "detail": "It is also suitable time for the transplanting of papaya\nseedlings in the fields."
+            },
+            {
+              "category": "irrigation",
+              "detail": "• Drain out excess rain water from the orchards as it may cause severe damage to fruit plants particularly citrus and papaya."
+            }
+          ]
+        },
+        {
+          "crop": "Fruits",
+          "advice": [
+            {
+              "category": "general",
+              "detail": "• The vacant land in between the fruit plants may be put under kharif pulses like moong, mash, moth or jantar, etc. for green manuring or as an inter-crop."
+            },
+            {
+              "category": "pest_management",
+              "detail": "• To control fruit fly in guava, fix 16 PAU fruit fly traps/ acre and recharge the same if required. Continuously remove and burry the infected fruits from orchards. Bagging of individual\nmature green and hard fruits of guava with white coloured non-woven bags will protect the fruits from fruit fly damage. Regularly monitor and harvest the ripening fruits."
+            },
+            {
+              "category": "general",
+              "detail": "Keep animals indoors or in a sturdy shelter during severe weather like rain, thunderstorms, lightning, hail, or strong winds. Keep all the dairy animals in shade and provide wallowing\nAnimal\n(particularly for buffaloes) or bath 1-2 times daily to avoid the heat stress. Provide clean and cold drinking water."
+            },
+            {
+              "category": "pest_management",
+              "detail": "Save your animals from ticks, lice and flies as these parasites suck blood,\nHusbandry:\ncause irritation and spread diseases."
+            },
+            {
+              "category": "general",
+              "detail": "Use butox or amitraz 2-3 ml/liter water for use on animals or dairy shed if ticks are more repeat it after 10-15 days during humid season. Gramin Krishi Musam Sewa, Ludhiana"
+            }
+          ]
+        }
+      ],
+      "pest_alerts": [
+        {
+          "crop": "Rice",
+          "pest_name": "Plant Hopper",
+          "severity": "medium",
+          "detail": "To prevent paddy\ndwarfing disease, pull out the infected plants early and dispose of them properly, such as by burying them deep in the soil. To manage the initial infection and further spread of this disease,\nregularly monitor the nursery and the fields for white-backed plant hoppers. If the presence of these hoppers is confirmed, apply insecticides—such as 60 g Flonicamid (Ulala 50 WG) or 80\ng Dinotefuran (Token/Oseen/Dominant 20 SG), or 120 g Pymetrozine (Chess 50 WG) in 100 liters of water per acre."
+        },
+        {
+          "crop": "Rice",
+          "pest_name": "Top Borer",
+          "severity": "monitoring",
+          "detail": "The attack of top borer can be checked by applying 10 kg Ferterra 0.4 GR or 12 kg Furadan/\nDiafuran/ Furacab/ Carbocil/ Fury encapsulated 3 G (carbofuran) at the base of the shoots upto first week of July."
+        },
+        {
+          "crop": "Sugarcane",
+          "pest_name": "General pest/disease",
+          "severity": "monitoring",
+          "detail": "Pheromone traps @ 10 per acre can also be used along with the recommended Tricho-card application for management of this pest."
+        },
+        {
+          "crop": "Sugarcane",
+          "pest_name": "Leaf Curl Virus",
+          "severity": "medium",
+          "detail": "This is Parawilt which can be checked by spraying cobalt chloride @ 10 mg/ litre of water on the affected plants at the initial stage of wilting. Regularly monitor\nthe crop for the incidence of cotton leaf curl virus."
+        },
+        {
+          "crop": "Sugarcane",
+          "pest_name": "Whitefly",
+          "severity": "medium",
+          "detail": "Regularly monitor the whitefly infestation on cotton crop and also on alternate\nhosts like brinjal, potato, tomato, okra, moong, mash and guar. Spray the crop when its population reached 6 whiteflies per leaf in the upper canopy before 10 AM with 400 ml Sefina 50 DC"
+        },
+        {
+          "crop": "Cotton",
+          "pest_name": "Thrips",
+          "severity": "high",
+          "detail": "(afidopyropen) or 60 g Osheen 20 SG (dinotefuran) or 200 g Polo/Craze/Ruby/Ludo/Shoku 50 WP (diafenthiuron) or 500 ml Lano/Daita 10 EC (pyriproxyfen) or 200 ml Oberon/Voltage 22.9\nSC (spiromesifen) or 80 g Ulala 50 WG (flonicamid) or 800 ml Fosmite/E-mite/Volthion/ Gold Mit 50 EC or 1 litre Nimbecidine/Achook or 1200 ml PAU Homemade neem extract in 125-\n150 litres of water/acre. In case severe attack of thrips spray the crop with 170 ml Delegate 11.7 SC (spinetoram) or 500 ml Curacron/Celron 50 EC (profenofos) in 100 litres of water per acre."
+        },
+        {
+          "crop": "Cotton",
+          "pest_name": "Rot",
+          "severity": "monitoring",
+          "detail": "Do not allow the rain water to stand in the main crop as this crop is highly sensitive to standing water and promotes bacterial stalk\nrot."
+        },
+        {
+          "crop": "Cotton",
+          "pest_name": "General pest/disease",
+          "severity": "monitoring",
+          "detail": "For effective control of mixed weed flora, spray 105 ml per acre Laudis 420 SC (tembotrione) in 150 litres of water at 20\ndays after sowing. Maize borer feeds on growing points of plants and forms dead hearts. Control this pest by spraying 30 ml Coragen 18.5 SC (chlorantraniliprole) in 60 litres of water per"
+        },
+        {
+          "crop": "Maize",
+          "pest_name": "Fall Armyworm",
+          "severity": "monitoring",
+          "detail": "Spray work should be initiated when the crop is 2-3 weeks old. Maize borer can also be controlled by using Trichogramma, a bioagent as per PAU recommendation. To control attack of\nfall armyworm, spray the grain crop with Coragen 18.5 SC (chlorantraniliprole) @ 0.4 ml or Delegate 11.7 SC (spinetoram) @ 0.5 ml or Missile 5 SG (emamectin benzoate) @ 0.4 g per litre\nof water. Direct the spray nozzle towards the whorl, for its effective control. If the infestation is in patches or the crop is more than 40 days old and spraying is difficult, apply soil-insecticide\nmixture (about half gram) in the whorls of the infested plants. To prepare the soil–insecticide mixture, add 5 ml of Coragen 18.5 SC or Delegate 11.7 SC or 5 g of Missile 5 SG in 10 ml of\nwater and mix well in one kg of soil."
+        },
+        {
+          "crop": "Fodder",
+          "pest_name": "General pest/disease",
+          "severity": "monitoring",
+          "detail": "Start sowing of Punjab Suhawani and Punjab Lalima varieties of okra which are tolerant to yellow\nvein mosaic virus."
+        },
+        {
+          "crop": "Vegetables",
+          "pest_name": "Shoot Borer",
+          "severity": "monitoring",
+          "detail": "To check fruit and shoot borer attack in brinjal, spray 80 ml Coragen 18.5 SC or 80 g Proclaim 5SG in 100-125 litres of water per acre."
+        },
+        {
+          "crop": "Fruits",
+          "pest_name": "Rot",
+          "severity": "medium",
+          "detail": "• To control fruit fly in guava, fix 16 PAU fruit fly traps/ acre and recharge the same if required. Continuously remove and burry the infected fruits from orchards. Bagging of individual\nmature green and hard fruits of guava with white coloured non-woven bags will protect the fruits from fruit fly damage. Regularly monitor and harvest the ripening fruits."
+        },
+        {
+          "crop": "Fruits",
+          "pest_name": "General pest/disease",
+          "severity": "monitoring",
+          "detail": "Save your animals from ticks, lice and flies as these parasites suck blood,\nHusbandry:\ncause irritation and spread diseases."
+        }
+      ],
+      "seasonal_tips": [
+        {
+          "topic": "Drainage",
+          "detail": "Keep proper drainage in the field to avoid water stagnation."
+        },
+        {
+          "topic": "Chemical Application Timing",
+          "detail": "Application of\nchemicals/fertilizers advised under crop specific advisories should be adjusted as per possible rainfall in the area."
+        },
+        {
+          "topic": "Rainwater Management",
+          "detail": "Remove excess rainwater after rainfall."
+        }
+      ]
+    }
+  ],
+  "total_issues": 2
 }

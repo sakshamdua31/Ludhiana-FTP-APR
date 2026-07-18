@@ -533,6 +533,20 @@
         "max_price": 800,
         "arrival_date": "2026-07-17"
       }
+    ],
+    "2026-07-18": [
+      {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Potato",
+        "grade": "FAQ",
+        "modal_price": 860,
+        "min_price": 860,
+        "max_price": 860,
+        "arrival_date": "2026-07-18"
+      }
     ]
   },
   "tomato": {
@@ -794,6 +808,20 @@
         "min_price": 700,
         "max_price": 2600,
         "arrival_date": "2026-07-17"
+      }
+    ],
+    "2026-07-18": [
+      {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Tomato",
+        "variety": "Tomato",
+        "grade": "FAQ",
+        "modal_price": 3750,
+        "min_price": 3750,
+        "max_price": 3750,
+        "arrival_date": "2026-07-18"
       }
     ]
   },
@@ -1791,6 +1819,20 @@
         "max_price": 800,
         "arrival_date": "2026-07-17"
       }
+    ],
+    "2026-07-18": [
+      {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Pumpkin",
+        "variety": "Pumpkin",
+        "grade": "FAQ",
+        "modal_price": 1200,
+        "min_price": 1200,
+        "max_price": 1200,
+        "arrival_date": "2026-07-18"
+      }
     ]
   },
   "ridgeguard_tori": {
@@ -2254,6 +2296,20 @@
         "min_price": 2000,
         "max_price": 3000,
         "arrival_date": "2026-07-17"
+      }
+    ],
+    "2026-07-18": [
+      {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bottle gourd",
+        "variety": "Bottle Gourd",
+        "grade": "FAQ",
+        "modal_price": 2800,
+        "min_price": 2800,
+        "max_price": 2800,
+        "arrival_date": "2026-07-18"
       }
     ]
   },
@@ -4012,7 +4068,7 @@
     "banana": "Banana",
     "maize": "Maize"
   },
-  "updated": "2026-07-18 10:12:05 IST",
+  "updated": "2026-07-18 12:25:59 IST",
   "source": "AGMARKNET via data.gov.in",
   "retention_days": 30,
   "district": "Ludhiana",

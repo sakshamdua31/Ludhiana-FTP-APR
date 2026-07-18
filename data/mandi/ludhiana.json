@@ -550,18 +550,6 @@
     ],
     "2026-07-18": [
       {
-        "market": "Sahnewal APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Potato",
-        "grade": "FAQ",
-        "modal_price": 860,
-        "min_price": 860,
-        "max_price": 860,
-        "arrival_date": "2026-07-18"
-      },
-      {
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -571,6 +559,18 @@
         "modal_price": 400,
         "min_price": 200,
         "max_price": 800,
+        "arrival_date": "2026-07-18"
+      },
+      {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Potato",
+        "grade": "FAQ",
+        "modal_price": 860,
+        "min_price": 860,
+        "max_price": 860,
         "arrival_date": "2026-07-18"
       }
     ]
@@ -4388,7 +4388,7 @@
     "banana": "Banana",
     "maize": "Maize"
   },
-  "updated": "2026-07-18 14:15:55 IST",
+  "updated": "2026-07-18 15:43:10 IST",
   "source": "AGMARKNET via data.gov.in",
   "retention_days": 30,
   "district": "Ludhiana",

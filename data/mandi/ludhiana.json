@@ -4544,18 +4544,6 @@
         "arrival_date": "2026-07-18"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1300,
-        "min_price": 900,
-        "max_price": 2000,
-        "arrival_date": "2026-07-18"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -4565,6 +4553,18 @@
         "modal_price": 5000,
         "min_price": 5000,
         "max_price": 5000,
+        "arrival_date": "2026-07-18"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Green Chilli",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 1300,
+        "min_price": 900,
+        "max_price": 2000,
         "arrival_date": "2026-07-18"
       },
       {
@@ -4740,7 +4740,7 @@
     "banana": "Banana",
     "maize": "Maize"
   },
-  "updated": "2026-07-19 00:23:19 IST",
+  "updated": "2026-07-19 01:31:10 IST",
   "source": "AGMARKNET via data.gov.in",
   "retention_days": 30,
   "district": "Ludhiana",

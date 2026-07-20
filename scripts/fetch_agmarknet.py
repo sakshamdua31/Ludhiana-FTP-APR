@@ -109,34 +109,13 @@ def to_row(rec):
 
 
 def get_fetch_dates():
-    """Only fetch dates not already in the JSON. Check last MAX_LOOKBACK days."""
+    """Always fetch the last MAX_LOOKBACK days."""
     ist = timezone(timedelta(hours=5, minutes=30))
     today = datetime.now(ist).date()
-
-    # Load existing dates from JSON
-    existing_dates = set()
-    if OUT_PATH.exists():
-        try:
-            prev = json.loads(OUT_PATH.read_text(encoding="utf-8"))
-            for k, v in prev.items():
-                if isinstance(v, dict):
-                    for dt in v.keys():
-                        if re.match(r'^\d{4}-\d{2}-\d{2}$', dt):
-                            existing_dates.add(dt)
-        except json.JSONDecodeError:
-            pass
-
     dates = []
     for i in range(MAX_LOOKBACK):
         d = today - timedelta(days=i)
-        d_iso = d.strftime("%Y-%m-%d")
-        if d_iso not in existing_dates:
-            dates.append(d.strftime("%d/%m/%Y"))
-
-    if not dates:
-        # Always fetch today at minimum (data might have updated)
-        dates.append(today.strftime("%d/%m/%Y"))
-
+        dates.append(d.strftime("%d/%m/%Y"))
     return dates
 
 

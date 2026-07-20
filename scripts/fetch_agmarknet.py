@@ -1,4 +1,4 @@
-"""Fetch Ludhiana mandi prices by fetching commodity-wise from Agmarknet, then filtering."""
+"""Fetch Ludhiana mandi prices by fetching commodity-wise + date-wise from Agmarknet."""
 import json
 import os
 import re
@@ -7,7 +7,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone, timedelta, date
 from pathlib import Path
 
 API_KEY  = os.environ["DATA_GOV_KEY"]
@@ -17,10 +17,9 @@ STATE    = "Punjab"
 DISTRICT = "Ludhiana"
 RETENTION_DAYS = 30
 FETCH_LIMIT    = 500
+FETCH_DAYS     = 7      # fetch last 7 days of data each run
 OUT_PATH = Path("data/mandi/ludhiana.json")
 
-# Broad commodity list. We fetch each by name (reliable), then filter to Ludhiana.
-# Add or remove commodities freely — script auto-slugs the labels.
 COMMODITIES = [
     "Paddy(Dhan)(Common)", "Basmati Paddy", "Wheat", "Maize",
     "Bengal Gram(Gram)(Whole)", "Arhar (Tur/Red Gram)(Whole)",
@@ -41,14 +40,15 @@ def slugify(name):
     return s or "unknown"
 
 
-def fetch_page(commodity, offset):
-    """Fetch one page of records for a commodity."""
+def fetch_page(commodity, arrival_date_str, offset):
+    """Fetch one page of records for a commodity + specific date."""
     params = urllib.parse.urlencode({
         "api-key": API_KEY,
         "format":  "json",
         "limit":   FETCH_LIMIT,
         "offset":  offset,
         "filters[commodity]": commodity,
+        "filters[arrival_date]": arrival_date_str,
     })
     url = f"{BASE_URL}?{params}"
     req = urllib.request.Request(url, headers={"User-Agent": "AgriDashboard/1.0"})
@@ -56,14 +56,14 @@ def fetch_page(commodity, offset):
         return json.loads(resp.read().decode())
 
 
-def fetch_commodity_ludhiana(commodity):
-    """Paginate through commodity data, keep only Ludhiana rows."""
+def fetch_commodity_date_ludhiana(commodity, arrival_date_str):
+    """Fetch all records for a commodity on a specific date, keep only Ludhiana."""
     ludhiana_rows = []
     offset = 0
-    for attempt in range(1, 5):
+    for attempt in range(1, 4):
         try:
             while True:
-                data = fetch_page(commodity, offset)
+                data = fetch_page(commodity, arrival_date_str, offset)
                 records = data.get("records", [])
                 for r in records:
                     if (r.get("state") or "").strip() == STATE and \
@@ -74,10 +74,13 @@ def fetch_commodity_ludhiana(commodity):
                 if fetched >= total or not records:
                     return ludhiana_rows
                 offset += FETCH_LIMIT
+            break
         except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as e:
             wait = 5 * attempt
-            print(f"    attempt {attempt} failed ({type(e).__name__}); retrying in {wait}s…", flush=True)
+            print(f"      attempt {attempt} failed ({type(e).__name__}); retrying in {wait}s", flush=True)
             time.sleep(wait)
+            offset = 0
+            ludhiana_rows = []
     return ludhiana_rows
 
 
@@ -106,6 +109,17 @@ def to_row(rec):
     }
 
 
+def get_fetch_dates():
+    """Generate the last FETCH_DAYS dates in DD/MM/YYYY format for the API."""
+    ist = timezone(timedelta(hours=5, minutes=30))
+    today = datetime.now(ist).date()
+    dates = []
+    for i in range(FETCH_DAYS):
+        d = today - timedelta(days=i)
+        dates.append(d.strftime("%d/%m/%Y"))
+    return dates
+
+
 def merge_with_existing(new_grouped, new_labels):
     existing = {}
     existing_labels = {}
@@ -122,33 +136,42 @@ def merge_with_existing(new_grouped, new_labels):
     cutoff = (datetime.now(timezone.utc) - timedelta(days=RETENTION_DAYS)).date().isoformat()
     for crop, dates in new_grouped.items():
         existing.setdefault(crop, {})
-        for date, rows in dates.items():
-            existing[crop][date] = rows
+        for dt, rows in dates.items():
+            existing[crop][dt] = rows
         existing[crop] = {d: rows for d, rows in existing[crop].items() if d >= cutoff}
     return existing, {**existing_labels, **new_labels}
 
 
 def main():
-    print(f"Fetching Ludhiana data commodity-by-commodity from Agmarknet…", flush=True)
+    print("Fetching Ludhiana data (commodity + date filtered) from Agmarknet", flush=True)
+
+    fetch_dates = get_fetch_dates()
+    print(f"Fetching dates: {', '.join(fetch_dates)}", flush=True)
 
     grouped = {}
     labels  = {}
     total_rows = 0
 
     for commodity in COMMODITIES:
-        print(f"  → {commodity}", flush=True)
-        rows = fetch_commodity_ludhiana(commodity)
-        if not rows:
-            continue
         crop_key = slugify(commodity)
         labels[crop_key] = commodity
-        for r in rows:
-            date_iso, row = to_row(r)
-            if date_iso:
-                grouped.setdefault(crop_key, {}).setdefault(date_iso, []).append(row)
-                total_rows += 1
-        print(f"      kept {len(rows)} Ludhiana rows", flush=True)
-        time.sleep(2)   # be nice to the API
+        crop_rows = 0
+
+        for date_str in fetch_dates:
+            rows = fetch_commodity_date_ludhiana(commodity, date_str)
+            for r in rows:
+                date_iso, row = to_row(r)
+                if date_iso:
+                    grouped.setdefault(crop_key, {}).setdefault(date_iso, []).append(row)
+                    crop_rows += 1
+                    total_rows += 1
+            # Small delay between date calls to avoid rate limits
+            time.sleep(0.5)
+
+        if crop_rows:
+            print(f"  {commodity}: {crop_rows} rows", flush=True)
+        # Delay between commodities
+        time.sleep(1)
 
     print(f"\nTotal Ludhiana rows: {total_rows} across {len(grouped)} commodities", flush=True)
 

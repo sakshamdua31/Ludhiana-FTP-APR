@@ -15,9 +15,8 @@ RESOURCE = "9ef84268-d588-465a-a308-a864a43d0070"
 BASE_URL = f"https://api.data.gov.in/resource/{RESOURCE}"
 STATE    = "Punjab"
 DISTRICT = "Ludhiana"
-RETENTION_DAYS = 30
 FETCH_LIMIT    = 500
-FETCH_DAYS     = 7      # fetch last 7 days of data each run
+MAX_LOOKBACK   = 3      # only check last 3 days for new data
 OUT_PATH = Path("data/mandi/ludhiana.json")
 
 COMMODITIES = [
@@ -110,13 +109,34 @@ def to_row(rec):
 
 
 def get_fetch_dates():
-    """Generate the last FETCH_DAYS dates in DD/MM/YYYY format for the API."""
+    """Only fetch dates not already in the JSON. Check last MAX_LOOKBACK days."""
     ist = timezone(timedelta(hours=5, minutes=30))
     today = datetime.now(ist).date()
+
+    # Load existing dates from JSON
+    existing_dates = set()
+    if OUT_PATH.exists():
+        try:
+            prev = json.loads(OUT_PATH.read_text(encoding="utf-8"))
+            for k, v in prev.items():
+                if isinstance(v, dict):
+                    for dt in v.keys():
+                        if re.match(r'^\d{4}-\d{2}-\d{2}$', dt):
+                            existing_dates.add(dt)
+        except json.JSONDecodeError:
+            pass
+
     dates = []
-    for i in range(FETCH_DAYS):
+    for i in range(MAX_LOOKBACK):
         d = today - timedelta(days=i)
-        dates.append(d.strftime("%d/%m/%Y"))
+        d_iso = d.strftime("%Y-%m-%d")
+        if d_iso not in existing_dates:
+            dates.append(d.strftime("%d/%m/%Y"))
+
+    if not dates:
+        # Always fetch today at minimum (data might have updated)
+        dates.append(today.strftime("%d/%m/%Y"))
+
     return dates
 
 
@@ -133,12 +153,10 @@ def merge_with_existing(new_grouped, new_labels):
         except json.JSONDecodeError:
             pass
 
-    cutoff = (datetime.now(timezone.utc) - timedelta(days=RETENTION_DAYS)).date().isoformat()
     for crop, dates in new_grouped.items():
         existing.setdefault(crop, {})
         for dt, rows in dates.items():
             existing[crop][dt] = rows
-        existing[crop] = {d: rows for d, rows in existing[crop].items() if d >= cutoff}
     return existing, {**existing_labels, **new_labels}
 
 
@@ -165,12 +183,10 @@ def main():
                     grouped.setdefault(crop_key, {}).setdefault(date_iso, []).append(row)
                     crop_rows += 1
                     total_rows += 1
-            # Small delay between date calls to avoid rate limits
             time.sleep(0.5)
 
         if crop_rows:
             print(f"  {commodity}: {crop_rows} rows", flush=True)
-        # Delay between commodities
         time.sleep(1)
 
     print(f"\nTotal Ludhiana rows: {total_rows} across {len(grouped)} commodities", flush=True)
@@ -179,12 +195,11 @@ def main():
 
     now_ist = datetime.now(timezone(timedelta(hours=5, minutes=30)))
     output = dict(merged)
-    output["_labels"]        = all_labels
-    output["updated"]        = now_ist.strftime("%Y-%m-%d %H:%M:%S IST")
-    output["source"]         = "AGMARKNET via data.gov.in"
-    output["retention_days"] = RETENTION_DAYS
-    output["district"]       = DISTRICT
-    output["state"]          = STATE
+    output["_labels"]   = all_labels
+    output["updated"]   = now_ist.strftime("%Y-%m-%d %H:%M:%S IST")
+    output["source"]    = "AGMARKNET via data.gov.in"
+    output["district"]  = DISTRICT
+    output["state"]     = STATE
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     OUT_PATH.write_text(json.dumps(output, ensure_ascii=False, indent=2), encoding="utf-8")

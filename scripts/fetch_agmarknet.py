@@ -16,7 +16,7 @@ BASE_URL = f"https://api.data.gov.in/resource/{RESOURCE}"
 STATE    = "Punjab"
 DISTRICT = "Ludhiana"
 FETCH_LIMIT    = 500
-MAX_LOOKBACK   = 3      # only check last 3 days for new data
+MAX_LOOKBACK   = 7      # only check last 3 days for new data
 OUT_PATH = Path("data/mandi/ludhiana.json")
 
 COMMODITIES = [

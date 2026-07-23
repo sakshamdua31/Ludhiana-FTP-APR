@@ -11,7 +11,7 @@ from datetime import datetime, timezone, timedelta, date
 from pathlib import Path
 
 API_KEY  = os.environ["DATA_GOV_KEY"]
-RESOURCE = "9ef84268-d588-465a-a308-a864a43d0070"
+RESOURCE = "35985678-0d79-46b4-9ed6-6f13308a1d24"
 BASE_URL = f"https://api.data.gov.in/resource/{RESOURCE}"
 STATE    = "Punjab"
 DISTRICT = "Ludhiana"
@@ -64,6 +64,10 @@ def fetch_commodity_date_ludhiana(commodity, arrival_date_str):
             while True:
                 data = fetch_page(commodity, arrival_date_str, offset)
                 records = data.get("records", [])
+                # Normalize field names to lowercase (variety-wise dataset returns
+                # "State", "Market", "Arrival_Date" etc.; downstream code expects
+                # "state", "market", "arrival_date").
+                records = [{k.lower(): v for k, v in r.items()} for r in records]
                 for r in records:
                     if (r.get("state") or "").strip() == STATE and \
                        (r.get("district") or "").strip() == DISTRICT:

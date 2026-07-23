@@ -87,10 +87,17 @@ def fetch_commodity_date_ludhiana(commodity, arrival_date_str):
     return ludhiana_rows
 
 
-def fetch_jagraon_date(arrival_date_str):
-    """Fetch all Jagraon APMC records for a date from the variety-wise dataset.
-    Jagraon does not appear in the primary dataset, so we fetch it separately.
-    Filtered server-side by market, so each call is small (~5-15 records)."""
+def fetch_jagraon_date(arrival_date_str_ddmmyyyy):
+    """Fetch Jagraon APMC records for one date from the variety-wise dataset.
+
+    Empirically verified filter format for this dataset:
+      - Lowercase filter names (state.keyword, district, market, arrival_date)
+      - Date format: DD/MM/YYYY with slashes (NOT dashes, despite the schema doc)
+      - state.keyword variant needed instead of plain state
+
+    We also filter dates client-side as a safety net in case the API's date
+    filter isn't as tight as expected.
+    """
     rows = []
     offset = 0
     for attempt in range(1, 4):
@@ -101,19 +108,30 @@ def fetch_jagraon_date(arrival_date_str):
                     "format":  "json",
                     "limit":   FETCH_LIMIT,
                     "offset":  offset,
-                    "filters[market]": "Jagraon APMC",
-                    "filters[arrival_date]": arrival_date_str,
+                    "filters[state.keyword]":  STATE,
+                    "filters[district]":       DISTRICT,
+                    "filters[market]":         "Jagraon APMC",
+                    "filters[arrival_date]":   arrival_date_str_ddmmyyyy,
                 })
                 url = f"https://api.data.gov.in/resource/{JAGRAON_RESOURCE}?{params}"
                 req = urllib.request.Request(url, headers={"User-Agent": "AgriDashboard/1.0"})
                 with urllib.request.urlopen(req, timeout=20) as resp:
                     data = json.loads(resp.read().decode())
                 records = data.get("records", [])
-                # Variety-wise dataset returns capitalized field names — normalize.
+                # Normalize field names to lowercase to match downstream code.
                 records = [{k.lower(): v for k, v in r.items()} for r in records]
-                rows.extend(records)
+                # Client-side safety filter: keep only records that actually
+                # match Jagraon and the requested date (in case API filters
+                # were partially ignored).
+                for r in records:
+                    if (r.get("market") or "").strip() != "Jagraon APMC":
+                        continue
+                    if (r.get("arrival_date") or "").strip() != arrival_date_str_ddmmyyyy:
+                        continue
+                    rows.append(r)
                 total = int(data.get("total", 0))
-                if offset + len(records) >= total or not records:
+                fetched = offset + len(records)
+                if fetched >= total or not records:
                     return rows
                 offset += FETCH_LIMIT
         except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError,
@@ -123,7 +141,7 @@ def fetch_jagraon_date(arrival_date_str):
             time.sleep(wait)
             offset = 0
             rows = []
-    print(f"      giving up on Jagraon {arrival_date_str} after 3 attempts", flush=True)
+    print(f"      giving up on Jagraon {arrival_date_str_ddmmyyyy} after 3 attempts", flush=True)
     return rows
 
 
@@ -215,8 +233,8 @@ def main():
     print(f"\nTotal Ludhiana rows: {total_rows} across {len(grouped)} commodities", flush=True)
 
     # --- Second pass: Jagraon APMC from variety-wise dataset ---
-    # (Jagraon is missing from the primary dataset. This is a small, fast
-    # top-up: filtered server-side by market, so ~1 API call per date.)
+    # (Jagraon is missing from the primary dataset. Small, fast top-up:
+    # one API call per date, filtered server-side by State+District+Market.)
     print("\nFetching Jagraon APMC from variety-wise dataset...", flush=True)
     commodity_to_slug = {c: slugify(c) for c in COMMODITIES}
     known_commodities = set(commodity_to_slug.keys())
@@ -228,7 +246,7 @@ def main():
             commodity = (r.get("commodity") or "").strip()
             if commodity not in known_commodities:
                 jagraon_skipped += 1
-                continue  # skip commodities not in our target list
+                continue
             date_iso, row = to_row(r)
             if date_iso:
                 crop_key = commodity_to_slug[commodity]
@@ -236,7 +254,7 @@ def main():
                 jagraon_added += 1
         time.sleep(0.3)
     print(f"Jagraon rows added: {jagraon_added} "
-          f"(skipped {jagraon_skipped} outside target commodity list)", flush=True)
+          f"(skipped {jagraon_skipped} outside commodity list)", flush=True)
 
     merged, all_labels = merge_with_existing(grouped, labels)
 

@@ -87,19 +87,16 @@ def fetch_commodity_date_ludhiana(commodity, arrival_date_str):
     return ludhiana_rows
 
 
-def fetch_jagraon_date(arrival_date_str_ddmmyyyy):
-    """Fetch Jagraon APMC records for one date from the variety-wise dataset.
+def fetch_jagraon_all():
+    """Fetch ALL Jagraon APMC records from the variety-wise dataset (paginated).
 
-    Empirically verified filter format for this dataset:
-      - Lowercase filter names (state.keyword, district, market, arrival_date)
-      - Date format: DD/MM/YYYY with slashes (NOT dashes, despite the schema doc)
-      - state.keyword variant needed instead of plain state
-
-    We also filter dates client-side as a safety net in case the API's date
-    filter isn't as tight as expected.
+    We use only state+district+market filters (empirically fast, ~15k records).
+    The API's arrival_date filter causes hangs on this dataset, so we filter
+    by date client-side in Python. Bounded work: ~31 pages of 500 records max.
     """
     rows = []
     offset = 0
+    page_num = 0
     for attempt in range(1, 4):
         try:
             while True:
@@ -111,37 +108,39 @@ def fetch_jagraon_date(arrival_date_str_ddmmyyyy):
                     "filters[state.keyword]":  STATE,
                     "filters[district]":       DISTRICT,
                     "filters[market]":         "Jagraon APMC",
-                    "filters[arrival_date]":   arrival_date_str_ddmmyyyy,
                 })
                 url = f"https://api.data.gov.in/resource/{JAGRAON_RESOURCE}?{params}"
                 req = urllib.request.Request(url, headers={"User-Agent": "AgriDashboard/1.0"})
                 with urllib.request.urlopen(req, timeout=20) as resp:
                     data = json.loads(resp.read().decode())
                 records = data.get("records", [])
-                # Normalize field names to lowercase to match downstream code.
                 records = [{k.lower(): v for k, v in r.items()} for r in records]
-                # Client-side safety filter: keep only records that actually
-                # match Jagraon and the requested date (in case API filters
-                # were partially ignored).
+                # Keep only actual Jagraon records (safety filter).
                 for r in records:
-                    if (r.get("market") or "").strip() != "Jagraon APMC":
-                        continue
-                    if (r.get("arrival_date") or "").strip() != arrival_date_str_ddmmyyyy:
-                        continue
-                    rows.append(r)
+                    if (r.get("market") or "").strip() == "Jagraon APMC":
+                        rows.append(r)
                 total = int(data.get("total", 0))
                 fetched = offset + len(records)
+                page_num += 1
+                print(f"      Jagraon page {page_num}: offset={offset}, "
+                      f"got {len(records)}, total={total}", flush=True)
                 if fetched >= total or not records:
                     return rows
                 offset += FETCH_LIMIT
+                # Hard cap to prevent runaway pagination
+                if page_num > 60:
+                    print("      Jagraon hit page cap (60), stopping", flush=True)
+                    return rows
         except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError,
                 http.client.IncompleteRead, ConnectionError, OSError) as e:
             wait = 5 * attempt
-            print(f"      Jagraon attempt {attempt} failed ({type(e).__name__}); retrying in {wait}s", flush=True)
+            print(f"      Jagraon attempt {attempt} failed ({type(e).__name__}); "
+                  f"retrying in {wait}s", flush=True)
             time.sleep(wait)
             offset = 0
+            page_num = 0
             rows = []
-    print(f"      giving up on Jagraon {arrival_date_str_ddmmyyyy} after 3 attempts", flush=True)
+    print(f"      giving up on Jagraon after 3 attempts", flush=True)
     return rows
 
 
@@ -233,28 +232,45 @@ def main():
     print(f"\nTotal Ludhiana rows: {total_rows} across {len(grouped)} commodities", flush=True)
 
     # --- Second pass: Jagraon APMC from variety-wise dataset ---
-    # (Jagraon is missing from the primary dataset. Small, fast top-up:
-    # one API call per date, filtered server-side by State+District+Market.)
+    # (Jagraon is missing from the primary dataset. The variety-wise dataset's
+    # arrival_date filter causes hangs on this endpoint, so we fetch ALL
+    # Jagraon-Ludhiana-Punjab records in bulk (~15k rows = ~31 pages) and
+    # filter to target dates in Python.)
     print("\nFetching Jagraon APMC from variety-wise dataset...", flush=True)
     commodity_to_slug = {c: slugify(c) for c in COMMODITIES}
     known_commodities = set(commodity_to_slug.keys())
+    target_iso_dates = set()
+    for d_str in fetch_dates:
+        try:
+            target_iso_dates.add(
+                datetime.strptime(d_str, "%d/%m/%Y").strftime("%Y-%m-%d")
+            )
+        except ValueError:
+            pass
+
+    all_jagraon_rows = fetch_jagraon_all()
+    print(f"      Total Jagraon rows fetched: {len(all_jagraon_rows)}", flush=True)
+
     jagraon_added = 0
+    jagraon_out_of_range = 0
     jagraon_skipped = 0
-    for date_str in fetch_dates:
-        rows = fetch_jagraon_date(date_str)
-        for r in rows:
-            commodity = (r.get("commodity") or "").strip()
-            if commodity not in known_commodities:
-                jagraon_skipped += 1
-                continue
-            date_iso, row = to_row(r)
-            if date_iso:
-                crop_key = commodity_to_slug[commodity]
-                grouped.setdefault(crop_key, {}).setdefault(date_iso, []).append(row)
-                jagraon_added += 1
-        time.sleep(0.3)
+    for r in all_jagraon_rows:
+        commodity = (r.get("commodity") or "").strip()
+        if commodity not in known_commodities:
+            jagraon_skipped += 1
+            continue
+        date_iso, row = to_row(r)
+        if not date_iso:
+            continue
+        if date_iso not in target_iso_dates:
+            jagraon_out_of_range += 1
+            continue
+        crop_key = commodity_to_slug[commodity]
+        grouped.setdefault(crop_key, {}).setdefault(date_iso, []).append(row)
+        jagraon_added += 1
     print(f"Jagraon rows added: {jagraon_added} "
-          f"(skipped {jagraon_skipped} outside commodity list)", flush=True)
+          f"(skipped {jagraon_skipped} outside commodity list, "
+          f"{jagraon_out_of_range} outside date range)", flush=True)
 
     merged, all_labels = merge_with_existing(grouped, labels)
 

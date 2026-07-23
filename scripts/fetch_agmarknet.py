@@ -4,6 +4,7 @@ import os
 import re
 import sys
 import time
+import http.client
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -78,7 +79,8 @@ def fetch_commodity_date_ludhiana(commodity, arrival_date_str):
                     return ludhiana_rows
                 offset += FETCH_LIMIT
             break
-        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError) as e:
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError,
+                http.client.IncompleteRead, ConnectionError) as e:
             wait = 5 * attempt
             print(f"      attempt {attempt} failed ({type(e).__name__}); retrying in {wait}s", flush=True)
             time.sleep(wait)

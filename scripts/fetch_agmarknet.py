@@ -12,7 +12,9 @@ from datetime import datetime, timezone, timedelta, date
 from pathlib import Path
 
 API_KEY  = os.environ["DATA_GOV_KEY"]
-RESOURCE = "35985678-0d79-46b4-9ed6-6f13308a1d24"
+RESOURCE = "9ef84268-d588-465a-a308-a864a43d0070"
+# Variety-wise dataset — used only for Jagraon APMC (missing from primary dataset above)
+JAGRAON_RESOURCE = "35985678-0d79-46b4-9ed6-6f13308a1d24"
 BASE_URL = f"https://api.data.gov.in/resource/{RESOURCE}"
 STATE    = "Punjab"
 DISTRICT = "Ludhiana"
@@ -52,7 +54,7 @@ def fetch_page(commodity, arrival_date_str, offset):
     })
     url = f"{BASE_URL}?{params}"
     req = urllib.request.Request(url, headers={"User-Agent": "AgriDashboard/1.0"})
-    with urllib.request.urlopen(req, timeout=15) as resp:
+    with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read().decode())
 
 
@@ -65,10 +67,6 @@ def fetch_commodity_date_ludhiana(commodity, arrival_date_str):
             while True:
                 data = fetch_page(commodity, arrival_date_str, offset)
                 records = data.get("records", [])
-                # Normalize field names to lowercase (variety-wise dataset returns
-                # "State", "Market", "Arrival_Date" etc.; downstream code expects
-                # "state", "market", "arrival_date").
-                records = [{k.lower(): v for k, v in r.items()} for r in records]
                 for r in records:
                     if (r.get("state") or "").strip() == STATE and \
                        (r.get("district") or "").strip() == DISTRICT:
@@ -86,8 +84,47 @@ def fetch_commodity_date_ludhiana(commodity, arrival_date_str):
             time.sleep(wait)
             offset = 0
             ludhiana_rows = []
-    print(f"      giving up on {commodity} {arrival_date_str} after 3 attempts", flush=True)
     return ludhiana_rows
+
+
+def fetch_jagraon_date(arrival_date_str):
+    """Fetch all Jagraon APMC records for a date from the variety-wise dataset.
+    Jagraon does not appear in the primary dataset, so we fetch it separately.
+    Filtered server-side by market, so each call is small (~5-15 records)."""
+    rows = []
+    offset = 0
+    for attempt in range(1, 4):
+        try:
+            while True:
+                params = urllib.parse.urlencode({
+                    "api-key": API_KEY,
+                    "format":  "json",
+                    "limit":   FETCH_LIMIT,
+                    "offset":  offset,
+                    "filters[market]": "Jagraon APMC",
+                    "filters[arrival_date]": arrival_date_str,
+                })
+                url = f"https://api.data.gov.in/resource/{JAGRAON_RESOURCE}?{params}"
+                req = urllib.request.Request(url, headers={"User-Agent": "AgriDashboard/1.0"})
+                with urllib.request.urlopen(req, timeout=20) as resp:
+                    data = json.loads(resp.read().decode())
+                records = data.get("records", [])
+                # Variety-wise dataset returns capitalized field names — normalize.
+                records = [{k.lower(): v for k, v in r.items()} for r in records]
+                rows.extend(records)
+                total = int(data.get("total", 0))
+                if offset + len(records) >= total or not records:
+                    return rows
+                offset += FETCH_LIMIT
+        except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError,
+                http.client.IncompleteRead, ConnectionError, OSError) as e:
+            wait = 5 * attempt
+            print(f"      Jagraon attempt {attempt} failed ({type(e).__name__}); retrying in {wait}s", flush=True)
+            time.sleep(wait)
+            offset = 0
+            rows = []
+    print(f"      giving up on Jagraon {arrival_date_str} after 3 attempts", flush=True)
+    return rows
 
 
 def _to_int(x):
@@ -157,7 +194,6 @@ def main():
     total_rows = 0
 
     for commodity in COMMODITIES:
-        print(f"[{commodity}] fetching...", flush=True)
         crop_key = slugify(commodity)
         labels[crop_key] = commodity
         crop_rows = 0
@@ -177,6 +213,30 @@ def main():
         time.sleep(1)
 
     print(f"\nTotal Ludhiana rows: {total_rows} across {len(grouped)} commodities", flush=True)
+
+    # --- Second pass: Jagraon APMC from variety-wise dataset ---
+    # (Jagraon is missing from the primary dataset. This is a small, fast
+    # top-up: filtered server-side by market, so ~1 API call per date.)
+    print("\nFetching Jagraon APMC from variety-wise dataset...", flush=True)
+    commodity_to_slug = {c: slugify(c) for c in COMMODITIES}
+    known_commodities = set(commodity_to_slug.keys())
+    jagraon_added = 0
+    jagraon_skipped = 0
+    for date_str in fetch_dates:
+        rows = fetch_jagraon_date(date_str)
+        for r in rows:
+            commodity = (r.get("commodity") or "").strip()
+            if commodity not in known_commodities:
+                jagraon_skipped += 1
+                continue  # skip commodities not in our target list
+            date_iso, row = to_row(r)
+            if date_iso:
+                crop_key = commodity_to_slug[commodity]
+                grouped.setdefault(crop_key, {}).setdefault(date_iso, []).append(row)
+                jagraon_added += 1
+        time.sleep(0.3)
+    print(f"Jagraon rows added: {jagraon_added} "
+          f"(skipped {jagraon_skipped} outside target commodity list)", flush=True)
 
     merged, all_labels = merge_with_existing(grouped, labels)
 

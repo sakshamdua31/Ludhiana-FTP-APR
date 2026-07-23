@@ -52,7 +52,7 @@ def fetch_page(commodity, arrival_date_str, offset):
     })
     url = f"{BASE_URL}?{params}"
     req = urllib.request.Request(url, headers={"User-Agent": "AgriDashboard/1.0"})
-    with urllib.request.urlopen(req, timeout=30) as resp:
+    with urllib.request.urlopen(req, timeout=15) as resp:
         return json.loads(resp.read().decode())
 
 
@@ -80,12 +80,13 @@ def fetch_commodity_date_ludhiana(commodity, arrival_date_str):
                 offset += FETCH_LIMIT
             break
         except (urllib.error.HTTPError, urllib.error.URLError, TimeoutError,
-                http.client.IncompleteRead, ConnectionError) as e:
+                http.client.IncompleteRead, ConnectionError, OSError) as e:
             wait = 5 * attempt
             print(f"      attempt {attempt} failed ({type(e).__name__}); retrying in {wait}s", flush=True)
             time.sleep(wait)
             offset = 0
             ludhiana_rows = []
+    print(f"      giving up on {commodity} {arrival_date_str} after 3 attempts", flush=True)
     return ludhiana_rows
 
 
@@ -156,6 +157,7 @@ def main():
     total_rows = 0
 
     for commodity in COMMODITIES:
+        print(f"[{commodity}] fetching...", flush=True)
         crop_key = slugify(commodity)
         labels[crop_key] = commodity
         crop_rows = 0

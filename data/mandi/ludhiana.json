@@ -56940,6 +56940,18 @@
         "min_price": 5600,
         "max_price": 5600,
         "arrival_date": "2026-08-13"
+      },
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Lemon",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 5600,
+        "min_price": 5600,
+        "max_price": 5600,
+        "arrival_date": "2026-08-13"
       }
     ],
     "2026-08-14": [
@@ -77128,6 +77140,18 @@
         "min_price": 2200,
         "max_price": 2200,
         "arrival_date": "2026-08-15"
+      },
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Banana",
+        "variety": "Other",
+        "grade": "Grade A",
+        "modal_price": 2200,
+        "min_price": 2200,
+        "max_price": 2200,
+        "arrival_date": "2026-08-15"
       }
     ],
     "2026-08-17": [
@@ -80250,7 +80274,7 @@
     "cotton": "Cotton",
     "rice": "Rice"
   },
-  "updated": "2026-08-18 06:23:04 IST",
+  "updated": "2026-08-18 07:49:35 IST",
   "source": "AGMARKNET via data.gov.in",
   "district": "Ludhiana",
   "state": "Punjab"

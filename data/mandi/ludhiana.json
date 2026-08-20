@@ -15224,6 +15224,18 @@
         "min_price": 800,
         "max_price": 800,
         "arrival_date": "2026-08-14"
+      },
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Brinjal",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 800,
+        "min_price": 800,
+        "max_price": 800,
+        "arrival_date": "2026-08-14"
       }
     ],
     "2026-08-15": [
@@ -15506,7 +15518,9 @@
         "min_price": 800,
         "max_price": 800,
         "arrival_date": "2026-08-18"
-      },
+      }
+    ],
+    "2026-08-19": [
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -15517,10 +15531,8 @@
         "modal_price": 800,
         "min_price": 800,
         "max_price": 800,
-        "arrival_date": "2026-08-18"
-      }
-    ],
-    "2026-08-19": [
+        "arrival_date": "2026-08-19"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -17331,6 +17343,18 @@
       }
     ],
     "2026-08-14": [
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cucumbar(Kheera)",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 600,
+        "min_price": 600,
+        "max_price": 600,
+        "arrival_date": "2026-08-14"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -42738,6 +42762,18 @@
         "min_price": 1800,
         "max_price": 1800,
         "arrival_date": "2026-08-17"
+      },
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Green Chilli",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 1800,
+        "min_price": 1800,
+        "max_price": 1800,
+        "arrival_date": "2026-08-17"
       }
     ],
     "2026-08-18": [
@@ -43974,18 +44010,6 @@
         "min_price": 8000,
         "max_price": 8000,
         "arrival_date": "2026-08-19"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Apple",
-        "variety": "Apple",
-        "grade": "Grade A",
-        "modal_price": 8000,
-        "min_price": 8000,
-        "max_price": 8000,
-        "arrival_date": "2026-08-19"
       }
     ]
   },
@@ -44903,6 +44927,18 @@
       }
     ],
     "2026-08-18": [
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Pomegranate",
+        "variety": "Other",
+        "grade": "Grade A",
+        "modal_price": 8300,
+        "min_price": 8300,
+        "max_price": 8300,
+        "arrival_date": "2026-08-18"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -57028,6 +57064,18 @@
         "min_price": 5500,
         "max_price": 5500,
         "arrival_date": "2026-08-14"
+      },
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Lemon",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 5500,
+        "min_price": 5500,
+        "max_price": 5500,
+        "arrival_date": "2026-08-14"
       }
     ],
     "2026-08-15": [
@@ -57229,6 +57277,18 @@
       }
     ],
     "2026-08-19": [
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Lemon",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 5500,
+        "min_price": 5500,
+        "max_price": 5500,
+        "arrival_date": "2026-08-19"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -82896,7 +82956,7 @@
     "cotton": "Cotton",
     "rice": "Rice"
   },
-  "updated": "2026-08-20 07:51:11 IST",
+  "updated": "2026-08-20 09:18:31 IST",
   "source": "AGMARKNET via data.gov.in",
   "district": "Ludhiana",
   "state": "Punjab"

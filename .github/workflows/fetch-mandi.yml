@@ -1,9 +1,12 @@
 name: Fetch Ludhiana Mandi Prices
-
 on:
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 */3 * * *"
   workflow_dispatch:
+
+concurrency:
+  group: fetch-ludhiana-mandi
+  cancel-in-progress: true
 
 jobs:
   fetch:
@@ -13,20 +16,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.11"
-
+          cache: 'pip'
       - name: Install requests
-        run: pip install requests
-
+        run: pip install -r requirements.txt
       - name: Fetch Agmarknet data
         env:
           DATA_GOV_KEY: ${{ secrets.DATA_GOV_KEY }}
         run: python scripts/fetch_agmarknet.py
-
       - name: Commit and push
         run: |
           git config user.name  "github-actions[bot]"

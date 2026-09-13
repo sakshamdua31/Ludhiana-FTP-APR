@@ -5018,18 +5018,6 @@
         "min_price": 2200,
         "max_price": 2200,
         "arrival_date": "2026-09-08"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
-        "arrival_date": "2026-09-08"
       }
     ],
     "2026-09-09": [
@@ -5061,18 +5049,6 @@
       }
     ],
     "2026-09-11": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2300,
-        "min_price": 2300,
-        "max_price": 2300,
-        "arrival_date": "2026-09-11"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -10312,33 +10288,9 @@
         "min_price": 230,
         "max_price": 230,
         "arrival_date": "2026-09-07"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 230,
-        "min_price": 230,
-        "max_price": 230,
-        "arrival_date": "2026-09-07"
       }
     ],
     "2026-09-08": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 230,
-        "min_price": 230,
-        "max_price": 230,
-        "arrival_date": "2026-09-08"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -10367,18 +10319,6 @@
       }
     ],
     "2026-09-10": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 230,
-        "min_price": 230,
-        "max_price": 230,
-        "arrival_date": "2026-09-10"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -15210,18 +15150,6 @@
         "min_price": 1800,
         "max_price": 1800,
         "arrival_date": "2026-09-09"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Tomato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1800,
-        "min_price": 1800,
-        "max_price": 1800,
-        "arrival_date": "2026-09-09"
       }
     ],
     "2026-09-10": [
@@ -19289,18 +19217,6 @@
       }
     ],
     "2026-09-11": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2100,
-        "min_price": 2100,
-        "max_price": 2100,
-        "arrival_date": "2026-09-11"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -28006,18 +27922,6 @@
         "min_price": 800,
         "max_price": 800,
         "arrival_date": "2026-09-08"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Brinjal",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 800,
-        "min_price": 800,
-        "max_price": 800,
-        "arrival_date": "2026-09-08"
       }
     ],
     "2026-09-09": [
@@ -31780,18 +31684,6 @@
         "min_price": 600,
         "max_price": 600,
         "arrival_date": "2026-09-07"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cucumbar(Kheera)",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 600,
-        "min_price": 600,
-        "max_price": 600,
-        "arrival_date": "2026-09-07"
       }
     ],
     "2026-09-08": [
@@ -31809,18 +31701,6 @@
       }
     ],
     "2026-09-09": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cucumbar(Kheera)",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 600,
-        "min_price": 600,
-        "max_price": 600,
-        "arrival_date": "2026-09-09"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -35097,18 +34977,6 @@
       }
     ],
     "2026-09-07": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Pumpkin",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 550,
-        "min_price": 550,
-        "max_price": 550,
-        "arrival_date": "2026-09-07"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -71928,18 +71796,6 @@
         "min_price": 1700,
         "max_price": 1700,
         "arrival_date": "2026-09-09"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1700,
-        "min_price": 1700,
-        "max_price": 1700,
-        "arrival_date": "2026-09-09"
       }
     ],
     "2026-09-10": [
@@ -74251,18 +74107,6 @@
       }
     ],
     "2026-09-07": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Apple",
-        "variety": "Apple",
-        "grade": "Grade A",
-        "modal_price": 8000,
-        "min_price": 8000,
-        "max_price": 8000,
-        "arrival_date": "2026-09-07"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -84318,18 +84162,6 @@
         "min_price": 4000,
         "max_price": 4000,
         "arrival_date": "2026-09-10"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Guava",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 4000,
-        "min_price": 4000,
-        "max_price": 4000,
-        "arrival_date": "2026-09-10"
       }
     ],
     "2026-09-12": [
@@ -86574,18 +86406,6 @@
         "min_price": 3000,
         "max_price": 3000,
         "arrival_date": "2026-09-09"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Papaya",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 3000,
-        "min_price": 3000,
-        "max_price": 3000,
-        "arrival_date": "2026-09-09"
       }
     ],
     "2026-09-10": [
@@ -86689,18 +86509,6 @@
       }
     ],
     "2026-09-11": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Papaya",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 3000,
-        "min_price": 3000,
-        "max_price": 3000,
-        "arrival_date": "2026-09-11"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -128244,33 +128052,9 @@
         "min_price": 2200,
         "max_price": 2200,
         "arrival_date": "2026-09-08"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Banana",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
-        "arrival_date": "2026-09-08"
       }
     ],
     "2026-09-09": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Banana",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
-        "arrival_date": "2026-09-09"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -133476,7 +133260,7 @@
     "cotton": "Cotton",
     "rice": "Rice"
   },
-  "updated": "2026-09-13 16:56:10 IST",
+  "updated": "2026-09-13 21:28:09 IST",
   "source": "AGMARKNET via data.gov.in",
   "district": "Ludhiana",
   "state": "Punjab"

@@ -5640,18 +5640,6 @@
         "min_price": 2600,
         "max_price": 2600,
         "arrival_date": "2026-09-19"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2600,
-        "min_price": 2600,
-        "max_price": 2600,
-        "arrival_date": "2026-09-19"
       }
     ],
     "2026-09-21": [
@@ -6106,51 +6094,15 @@
     ],
     "2026-09-24": [
       {
-        "market": "Samrala APMC",
+        "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 5000,
-        "min_price": 4500,
-        "max_price": 5500,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Onion",
+        "variety": "Nasik",
         "grade": "Grade A",
-        "modal_price": 3000,
-        "min_price": 3000,
-        "max_price": 3000,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Sahnewal APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Onion",
-        "grade": "FAQ",
-        "modal_price": 4600,
-        "min_price": 4600,
-        "max_price": 4600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Medium",
-        "grade": "Local",
-        "modal_price": 4100,
-        "min_price": 3700,
-        "max_price": 4300,
+        "modal_price": 4185,
+        "min_price": 4185,
+        "max_price": 4185,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6166,15 +6118,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Raikot APMC",
+        "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Nasik",
-        "grade": "Grade A",
-        "modal_price": 4185,
-        "min_price": 4185,
-        "max_price": 4185,
+        "variety": "Onion",
+        "grade": "FAQ",
+        "modal_price": 4600,
+        "min_price": 4600,
+        "max_price": 4600,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6190,6 +6142,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Onion",
+        "variety": "Medium",
+        "grade": "Local",
+        "modal_price": 4100,
+        "min_price": 3700,
+        "max_price": 4300,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -6202,27 +6166,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Onion",
-        "grade": "FAQ",
-        "modal_price": 4600,
-        "min_price": 4600,
-        "max_price": 4600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Medium",
-        "grade": "Local",
-        "modal_price": 4100,
-        "min_price": 3700,
-        "max_price": 4300,
+        "variety": "Nasik",
+        "grade": "Grade A",
+        "modal_price": 4185,
+        "min_price": 4185,
+        "max_price": 4185,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6238,15 +6190,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Raikot APMC",
+        "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Nasik",
-        "grade": "Grade A",
-        "modal_price": 4185,
-        "min_price": 4185,
-        "max_price": 4185,
+        "variety": "Onion",
+        "grade": "FAQ",
+        "modal_price": 4600,
+        "min_price": 4600,
+        "max_price": 4600,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6262,6 +6214,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Onion",
+        "variety": "Medium",
+        "grade": "Local",
+        "modal_price": 4100,
+        "min_price": 3700,
+        "max_price": 4300,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -6274,27 +6238,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Onion",
-        "grade": "FAQ",
-        "modal_price": 4600,
-        "min_price": 4600,
-        "max_price": 4600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Medium",
-        "grade": "Local",
-        "modal_price": 4100,
-        "min_price": 3700,
-        "max_price": 4300,
+        "variety": "Nasik",
+        "grade": "Grade A",
+        "modal_price": 4185,
+        "min_price": 4185,
+        "max_price": 4185,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6310,15 +6262,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Raikot APMC",
+        "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Nasik",
-        "grade": "Grade A",
-        "modal_price": 4185,
-        "min_price": 4185,
-        "max_price": 4185,
+        "variety": "Onion",
+        "grade": "FAQ",
+        "modal_price": 4600,
+        "min_price": 4600,
+        "max_price": 4600,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6334,6 +6286,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Onion",
+        "variety": "Medium",
+        "grade": "Local",
+        "modal_price": 4100,
+        "min_price": 3700,
+        "max_price": 4300,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -6346,27 +6310,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Onion",
-        "grade": "FAQ",
-        "modal_price": 4600,
-        "min_price": 4600,
-        "max_price": 4600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Medium",
-        "grade": "Local",
-        "modal_price": 4100,
-        "min_price": 3700,
-        "max_price": 4300,
+        "variety": "Nasik",
+        "grade": "Grade A",
+        "modal_price": 4185,
+        "min_price": 4185,
+        "max_price": 4185,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6382,15 +6334,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Raikot APMC",
+        "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Nasik",
-        "grade": "Grade A",
-        "modal_price": 4185,
-        "min_price": 4185,
-        "max_price": 4185,
+        "variety": "Onion",
+        "grade": "FAQ",
+        "modal_price": 4600,
+        "min_price": 4600,
+        "max_price": 4600,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6406,6 +6358,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Onion",
+        "variety": "Medium",
+        "grade": "Local",
+        "modal_price": 4100,
+        "min_price": 3700,
+        "max_price": 4300,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -6418,27 +6382,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Onion",
-        "grade": "FAQ",
-        "modal_price": 4600,
-        "min_price": 4600,
-        "max_price": 4600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Medium",
-        "grade": "Local",
-        "modal_price": 4100,
-        "min_price": 3700,
-        "max_price": 4300,
+        "variety": "Nasik",
+        "grade": "Grade A",
+        "modal_price": 4185,
+        "min_price": 4185,
+        "max_price": 4185,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6454,15 +6406,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Raikot APMC",
+        "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Nasik",
-        "grade": "Grade A",
-        "modal_price": 4185,
-        "min_price": 4185,
-        "max_price": 4185,
+        "variety": "Onion",
+        "grade": "FAQ",
+        "modal_price": 4600,
+        "min_price": 4600,
+        "max_price": 4600,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6478,6 +6430,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Onion",
+        "variety": "Medium",
+        "grade": "Local",
+        "modal_price": 4100,
+        "min_price": 3700,
+        "max_price": 4300,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -6490,27 +6454,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Onion",
-        "grade": "FAQ",
-        "modal_price": 4600,
-        "min_price": 4600,
-        "max_price": 4600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Medium",
-        "grade": "Local",
-        "modal_price": 4100,
-        "min_price": 3700,
-        "max_price": 4300,
+        "variety": "Nasik",
+        "grade": "Grade A",
+        "modal_price": 4185,
+        "min_price": 4185,
+        "max_price": 4185,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6526,15 +6478,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Raikot APMC",
+        "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Nasik",
-        "grade": "Grade A",
-        "modal_price": 4185,
-        "min_price": 4185,
-        "max_price": 4185,
+        "variety": "Onion",
+        "grade": "FAQ",
+        "modal_price": 4600,
+        "min_price": 4600,
+        "max_price": 4600,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6550,6 +6502,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Onion",
+        "variety": "Medium",
+        "grade": "Local",
+        "modal_price": 4100,
+        "min_price": 3700,
+        "max_price": 4300,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -6562,27 +6526,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Onion",
-        "grade": "FAQ",
-        "modal_price": 4600,
-        "min_price": 4600,
-        "max_price": 4600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Onion",
-        "variety": "Medium",
-        "grade": "Local",
-        "modal_price": 4100,
-        "min_price": 3700,
-        "max_price": 4300,
+        "variety": "Nasik",
+        "grade": "Grade A",
+        "modal_price": 4185,
+        "min_price": 4185,
+        "max_price": 4185,
         "arrival_date": "2026-09-24"
       },
       {
@@ -6598,15 +6550,51 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Raikot APMC",
+        "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Onion",
-        "variety": "Nasik",
+        "variety": "Onion",
+        "grade": "FAQ",
+        "modal_price": 4600,
+        "min_price": 4600,
+        "max_price": 4600,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Samrala APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Onion",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 5000,
+        "min_price": 4500,
+        "max_price": 5500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Onion",
+        "variety": "Medium",
+        "grade": "Local",
+        "modal_price": 4100,
+        "min_price": 3700,
+        "max_price": 4300,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Khanna APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Onion",
+        "variety": "Onion",
         "grade": "Grade A",
-        "modal_price": 4185,
-        "min_price": 4185,
-        "max_price": 4185,
+        "modal_price": 3000,
+        "min_price": 3000,
+        "max_price": 3000,
         "arrival_date": "2026-09-24"
       }
     ]
@@ -12016,18 +12004,6 @@
         "min_price": 230,
         "max_price": 230,
         "arrival_date": "2026-09-22"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 230,
-        "min_price": 230,
-        "max_price": 230,
-        "arrival_date": "2026-09-22"
       }
     ],
     "2026-09-23": [
@@ -12454,30 +12430,6 @@
     ],
     "2026-09-24": [
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 300,
-        "min_price": 100,
-        "max_price": 600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Desi",
-        "grade": "Local",
-        "modal_price": 600,
-        "min_price": 250,
-        "max_price": 800,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -12499,6 +12451,30 @@
         "modal_price": 450,
         "min_price": 400,
         "max_price": 500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 300,
+        "min_price": 100,
+        "max_price": 600,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Desi",
+        "grade": "Local",
+        "modal_price": 600,
+        "min_price": 250,
+        "max_price": 800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -12514,30 +12490,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 300,
-        "min_price": 100,
-        "max_price": 600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Desi",
-        "grade": "Local",
-        "modal_price": 600,
-        "min_price": 250,
-        "max_price": 800,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -12559,6 +12511,30 @@
         "modal_price": 450,
         "min_price": 400,
         "max_price": 500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 300,
+        "min_price": 100,
+        "max_price": 600,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Desi",
+        "grade": "Local",
+        "modal_price": 600,
+        "min_price": 250,
+        "max_price": 800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -12574,30 +12550,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 300,
-        "min_price": 100,
-        "max_price": 600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Desi",
-        "grade": "Local",
-        "modal_price": 600,
-        "min_price": 250,
-        "max_price": 800,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -12619,6 +12571,30 @@
         "modal_price": 450,
         "min_price": 400,
         "max_price": 500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 300,
+        "min_price": 100,
+        "max_price": 600,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Desi",
+        "grade": "Local",
+        "modal_price": 600,
+        "min_price": 250,
+        "max_price": 800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -12634,30 +12610,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 300,
-        "min_price": 100,
-        "max_price": 600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Desi",
-        "grade": "Local",
-        "modal_price": 600,
-        "min_price": 250,
-        "max_price": 800,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -12679,6 +12631,30 @@
         "modal_price": 450,
         "min_price": 400,
         "max_price": 500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 300,
+        "min_price": 100,
+        "max_price": 600,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Desi",
+        "grade": "Local",
+        "modal_price": 600,
+        "min_price": 250,
+        "max_price": 800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -12694,30 +12670,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 300,
-        "min_price": 100,
-        "max_price": 600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Desi",
-        "grade": "Local",
-        "modal_price": 600,
-        "min_price": 250,
-        "max_price": 800,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -12739,6 +12691,30 @@
         "modal_price": 450,
         "min_price": 400,
         "max_price": 500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 300,
+        "min_price": 100,
+        "max_price": 600,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Desi",
+        "grade": "Local",
+        "modal_price": 600,
+        "min_price": 250,
+        "max_price": 800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -12754,30 +12730,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 300,
-        "min_price": 100,
-        "max_price": 600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Desi",
-        "grade": "Local",
-        "modal_price": 600,
-        "min_price": 250,
-        "max_price": 800,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -12799,6 +12751,30 @@
         "modal_price": 450,
         "min_price": 400,
         "max_price": 500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 300,
+        "min_price": 100,
+        "max_price": 600,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Desi",
+        "grade": "Local",
+        "modal_price": 600,
+        "min_price": 250,
+        "max_price": 800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -12814,30 +12790,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 300,
-        "min_price": 100,
-        "max_price": 600,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Potato",
-        "variety": "Desi",
-        "grade": "Local",
-        "modal_price": 600,
-        "min_price": 250,
-        "max_price": 800,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -12859,6 +12811,30 @@
         "modal_price": 450,
         "min_price": 400,
         "max_price": 500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 300,
+        "min_price": 100,
+        "max_price": 600,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Potato",
+        "variety": "Desi",
+        "grade": "Local",
+        "modal_price": 600,
+        "min_price": 250,
+        "max_price": 800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -18248,18 +18224,6 @@
         "min_price": 1800,
         "max_price": 1800,
         "arrival_date": "2026-09-22"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Tomato",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1800,
-        "min_price": 1800,
-        "max_price": 1800,
-        "arrival_date": "2026-09-22"
       }
     ],
     "2026-09-23": [
@@ -18710,18 +18674,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Tomato",
-        "variety": "Deshi",
-        "grade": "Local",
-        "modal_price": 2300,
-        "min_price": 2000,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -18743,6 +18695,18 @@
         "modal_price": 3195,
         "min_price": 3195,
         "max_price": 3195,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Tomato",
+        "variety": "Deshi",
+        "grade": "Local",
+        "modal_price": 2300,
+        "min_price": 2000,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -18770,18 +18734,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Tomato",
-        "variety": "Deshi",
-        "grade": "Local",
-        "modal_price": 2300,
-        "min_price": 2000,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -18803,6 +18755,18 @@
         "modal_price": 3195,
         "min_price": 3195,
         "max_price": 3195,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Tomato",
+        "variety": "Deshi",
+        "grade": "Local",
+        "modal_price": 2300,
+        "min_price": 2000,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -18830,18 +18794,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Tomato",
-        "variety": "Deshi",
-        "grade": "Local",
-        "modal_price": 2300,
-        "min_price": 2000,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -18863,6 +18815,18 @@
         "modal_price": 3195,
         "min_price": 3195,
         "max_price": 3195,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Tomato",
+        "variety": "Deshi",
+        "grade": "Local",
+        "modal_price": 2300,
+        "min_price": 2000,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -18890,18 +18854,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Tomato",
-        "variety": "Deshi",
-        "grade": "Local",
-        "modal_price": 2300,
-        "min_price": 2000,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -18923,6 +18875,18 @@
         "modal_price": 3195,
         "min_price": 3195,
         "max_price": 3195,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Tomato",
+        "variety": "Deshi",
+        "grade": "Local",
+        "modal_price": 2300,
+        "min_price": 2000,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -18950,18 +18914,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Tomato",
-        "variety": "Deshi",
-        "grade": "Local",
-        "modal_price": 2300,
-        "min_price": 2000,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -18983,6 +18935,18 @@
         "modal_price": 3195,
         "min_price": 3195,
         "max_price": 3195,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Tomato",
+        "variety": "Deshi",
+        "grade": "Local",
+        "modal_price": 2300,
+        "min_price": 2000,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -19010,18 +18974,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Tomato",
-        "variety": "Deshi",
-        "grade": "Local",
-        "modal_price": 2300,
-        "min_price": 2000,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -19043,6 +18995,18 @@
         "modal_price": 3195,
         "min_price": 3195,
         "max_price": 3195,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Tomato",
+        "variety": "Deshi",
+        "grade": "Local",
+        "modal_price": 2300,
+        "min_price": 2000,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -19070,18 +19034,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Tomato",
-        "variety": "Deshi",
-        "grade": "Local",
-        "modal_price": 2300,
-        "min_price": 2000,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -19103,6 +19055,18 @@
         "modal_price": 3195,
         "min_price": 3195,
         "max_price": 3195,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Tomato",
+        "variety": "Deshi",
+        "grade": "Local",
+        "modal_price": 2300,
+        "min_price": 2000,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       }
     ]
@@ -23358,33 +23322,9 @@
         "min_price": 2500,
         "max_price": 2500,
         "arrival_date": "2026-09-19"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2500,
-        "min_price": 2500,
-        "max_price": 2500,
-        "arrival_date": "2026-09-19"
       }
     ],
     "2026-09-21": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2400,
-        "min_price": 2400,
-        "max_price": 2400,
-        "arrival_date": "2026-09-21"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -23410,9 +23350,33 @@
         "min_price": 2500,
         "max_price": 2500,
         "arrival_date": "2026-09-22"
+      },
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cauliflower",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 2500,
+        "min_price": 2500,
+        "max_price": 2500,
+        "arrival_date": "2026-09-22"
       }
     ],
     "2026-09-23": [
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cauliflower",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 2500,
+        "min_price": 2500,
+        "max_price": 2500,
+        "arrival_date": "2026-09-23"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -23428,15 +23392,15 @@
     ],
     "2026-09-24": [
       {
-        "market": "Doraha APMC",
+        "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Cauliflower",
-        "variety": "Local",
-        "grade": "Local",
-        "modal_price": 3000,
-        "min_price": 2000,
-        "max_price": 4000,
+        "variety": "Other",
+        "grade": "Grade A",
+        "modal_price": 2500,
+        "min_price": 2500,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -23449,18 +23413,6 @@
         "modal_price": 2000,
         "min_price": 1000,
         "max_price": 3300,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 2500,
-        "min_price": 2500,
-        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -23488,18 +23440,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1000,
-        "max_price": 3300,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -23509,6 +23449,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cauliflower",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1000,
+        "max_price": 3300,
         "arrival_date": "2026-09-24"
       },
       {
@@ -23536,18 +23488,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1000,
-        "max_price": 3300,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -23557,6 +23497,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cauliflower",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1000,
+        "max_price": 3300,
         "arrival_date": "2026-09-24"
       },
       {
@@ -23584,18 +23536,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1000,
-        "max_price": 3300,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -23605,6 +23545,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cauliflower",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1000,
+        "max_price": 3300,
         "arrival_date": "2026-09-24"
       },
       {
@@ -23632,18 +23584,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1000,
-        "max_price": 3300,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -23653,6 +23593,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cauliflower",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1000,
+        "max_price": 3300,
         "arrival_date": "2026-09-24"
       },
       {
@@ -23680,18 +23632,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1000,
-        "max_price": 3300,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -23701,6 +23641,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cauliflower",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1000,
+        "max_price": 3300,
         "arrival_date": "2026-09-24"
       },
       {
@@ -23728,18 +23680,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1000,
-        "max_price": 3300,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -23752,6 +23692,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cauliflower",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1000,
+        "max_price": 3300,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Samrala APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -23761,6 +23713,18 @@
         "modal_price": 1800,
         "min_price": 1500,
         "max_price": 2200,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cauliflower",
+        "variety": "Local",
+        "grade": "Local",
+        "modal_price": 3000,
+        "min_price": 2000,
+        "max_price": 4000,
         "arrival_date": "2026-09-24"
       }
     ]
@@ -26717,6 +26681,18 @@
       }
     ],
     "2026-09-23": [
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cabbage",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 300,
+        "min_price": 300,
+        "max_price": 300,
+        "arrival_date": "2026-09-23"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -30510,9 +30486,33 @@
         "min_price": 1200,
         "max_price": 1200,
         "arrival_date": "2026-09-22"
+      },
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bhindi(Ladies Finger)",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 1200,
+        "min_price": 1200,
+        "max_price": 1200,
+        "arrival_date": "2026-09-22"
       }
     ],
     "2026-09-23": [
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bhindi(Ladies Finger)",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 1200,
+        "min_price": 1200,
+        "max_price": 1200,
+        "arrival_date": "2026-09-23"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -30540,18 +30540,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bhindi(Ladies Finger)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1700,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -30573,6 +30561,18 @@
         "modal_price": 2800,
         "min_price": 2500,
         "max_price": 3000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bhindi(Ladies Finger)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1700,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -30588,18 +30588,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bhindi(Ladies Finger)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1700,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -30621,6 +30609,18 @@
         "modal_price": 2800,
         "min_price": 2500,
         "max_price": 3000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bhindi(Ladies Finger)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1700,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -30636,18 +30636,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bhindi(Ladies Finger)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1700,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -30669,6 +30657,18 @@
         "modal_price": 2800,
         "min_price": 2500,
         "max_price": 3000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bhindi(Ladies Finger)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1700,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -30684,18 +30684,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bhindi(Ladies Finger)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1700,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -30717,6 +30705,18 @@
         "modal_price": 2800,
         "min_price": 2500,
         "max_price": 3000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bhindi(Ladies Finger)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1700,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -30732,18 +30732,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bhindi(Ladies Finger)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1700,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -30765,6 +30753,18 @@
         "modal_price": 2800,
         "min_price": 2500,
         "max_price": 3000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bhindi(Ladies Finger)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1700,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -30780,18 +30780,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bhindi(Ladies Finger)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1700,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -30813,6 +30801,18 @@
         "modal_price": 2800,
         "min_price": 2500,
         "max_price": 3000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bhindi(Ladies Finger)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1700,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -30828,18 +30828,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bhindi(Ladies Finger)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1700,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -30861,6 +30849,18 @@
         "modal_price": 2800,
         "min_price": 2500,
         "max_price": 3000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bhindi(Ladies Finger)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1700,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       }
     ]
@@ -35084,6 +35084,18 @@
         "min_price": 800,
         "max_price": 800,
         "arrival_date": "2026-09-21"
+      },
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Brinjal",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 800,
+        "min_price": 800,
+        "max_price": 800,
+        "arrival_date": "2026-09-21"
       }
     ],
     "2026-09-22": [
@@ -35608,15 +35620,15 @@
     ],
     "2026-09-24": [
       {
-        "market": "Doraha APMC",
+        "market": "Sahnewal APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Brinjal",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1600,
-        "min_price": 800,
-        "max_price": 2000,
+        "variety": "Brinjal",
+        "grade": "FAQ",
+        "modal_price": 2200,
+        "min_price": 2200,
+        "max_price": 2200,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35632,18 +35644,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Brinjal",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1000,
-        "min_price": 200,
-        "max_price": 1800,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -35656,15 +35656,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Brinjal",
-        "variety": "Brinjal",
+        "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
+        "modal_price": 1000,
+        "min_price": 200,
+        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35680,6 +35680,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Brinjal",
+        "variety": "Brinjal",
+        "grade": "FAQ",
+        "modal_price": 2200,
+        "min_price": 2200,
+        "max_price": 2200,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -35689,18 +35701,6 @@
         "modal_price": 1500,
         "min_price": 1500,
         "max_price": 1500,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Brinjal",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1000,
-        "min_price": 200,
-        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35716,15 +35716,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Brinjal",
-        "variety": "Brinjal",
+        "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
+        "modal_price": 1000,
+        "min_price": 200,
+        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35740,6 +35740,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Brinjal",
+        "variety": "Brinjal",
+        "grade": "FAQ",
+        "modal_price": 2200,
+        "min_price": 2200,
+        "max_price": 2200,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -35749,18 +35761,6 @@
         "modal_price": 1500,
         "min_price": 1500,
         "max_price": 1500,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Brinjal",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1000,
-        "min_price": 200,
-        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35776,15 +35776,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Brinjal",
-        "variety": "Brinjal",
+        "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
+        "modal_price": 1000,
+        "min_price": 200,
+        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35800,6 +35800,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Brinjal",
+        "variety": "Brinjal",
+        "grade": "FAQ",
+        "modal_price": 2200,
+        "min_price": 2200,
+        "max_price": 2200,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -35809,18 +35821,6 @@
         "modal_price": 1500,
         "min_price": 1500,
         "max_price": 1500,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Brinjal",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1000,
-        "min_price": 200,
-        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35836,15 +35836,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Brinjal",
-        "variety": "Brinjal",
+        "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
+        "modal_price": 1000,
+        "min_price": 200,
+        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35860,6 +35860,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Brinjal",
+        "variety": "Brinjal",
+        "grade": "FAQ",
+        "modal_price": 2200,
+        "min_price": 2200,
+        "max_price": 2200,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -35869,18 +35881,6 @@
         "modal_price": 1500,
         "min_price": 1500,
         "max_price": 1500,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Brinjal",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1000,
-        "min_price": 200,
-        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35896,15 +35896,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Brinjal",
-        "variety": "Brinjal",
+        "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
+        "modal_price": 1000,
+        "min_price": 200,
+        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35920,6 +35920,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Brinjal",
+        "variety": "Brinjal",
+        "grade": "FAQ",
+        "modal_price": 2200,
+        "min_price": 2200,
+        "max_price": 2200,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -35929,18 +35941,6 @@
         "modal_price": 1500,
         "min_price": 1500,
         "max_price": 1500,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Brinjal",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1000,
-        "min_price": 200,
-        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35956,15 +35956,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Brinjal",
-        "variety": "Brinjal",
+        "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
+        "modal_price": 1000,
+        "min_price": 200,
+        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -35980,6 +35980,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Sahnewal APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Brinjal",
+        "variety": "Brinjal",
+        "grade": "FAQ",
+        "modal_price": 2200,
+        "min_price": 2200,
+        "max_price": 2200,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -35989,18 +36001,6 @@
         "modal_price": 1500,
         "min_price": 1500,
         "max_price": 1500,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Brinjal",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1000,
-        "min_price": 200,
-        "max_price": 1800,
         "arrival_date": "2026-09-24"
       },
       {
@@ -36016,15 +36016,27 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Sahnewal APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Brinjal",
-        "variety": "Brinjal",
+        "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
+        "modal_price": 1000,
+        "min_price": 200,
+        "max_price": 1800,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Brinjal",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1600,
+        "min_price": 800,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       }
     ]
@@ -40404,9 +40416,33 @@
         "min_price": 600,
         "max_price": 600,
         "arrival_date": "2026-09-21"
+      },
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cucumbar(Kheera)",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 600,
+        "min_price": 600,
+        "max_price": 600,
+        "arrival_date": "2026-09-21"
       }
     ],
     "2026-09-22": [
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cucumbar(Kheera)",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 600,
+        "min_price": 600,
+        "max_price": 600,
+        "arrival_date": "2026-09-22"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -40436,30 +40472,6 @@
     ],
     "2026-09-24": [
       {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cucumbar(Kheera)",
-        "variety": "Cucumbar",
-        "grade": "Grade A",
-        "modal_price": 1500,
-        "min_price": 1500,
-        "max_price": 1500,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cucumbar(Kheera)",
-        "variety": "Cucumbar",
-        "grade": "Local",
-        "modal_price": 2200,
-        "min_price": 1800,
-        "max_price": 2300,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -40685,6 +40697,30 @@
         "modal_price": 1600,
         "min_price": 700,
         "max_price": 2200,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Khanna APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cucumbar(Kheera)",
+        "variety": "Cucumbar",
+        "grade": "Grade A",
+        "modal_price": 1500,
+        "min_price": 1500,
+        "max_price": 1500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Cucumbar(Kheera)",
+        "variety": "Cucumbar",
+        "grade": "Local",
+        "modal_price": 2200,
+        "min_price": 1800,
+        "max_price": 2300,
         "arrival_date": "2026-09-24"
       }
     ]
@@ -44271,6 +44307,18 @@
       }
     ],
     "2026-09-22": [
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Pumpkin",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 550,
+        "min_price": 550,
+        "max_price": 550,
+        "arrival_date": "2026-09-22"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -53526,15 +53574,15 @@
     ],
     "2026-09-24": [
       {
-        "market": "Khanna APMC",
+        "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Ridgeguard(Tori)",
         "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 2500,
-        "min_price": 2500,
-        "max_price": 2500,
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1600,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -53550,18 +53598,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Ridgeguard(Tori)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1600,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -53571,6 +53607,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ridgeguard(Tori)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1600,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -53586,18 +53634,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Ridgeguard(Tori)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1600,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -53607,6 +53643,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ridgeguard(Tori)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1600,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -53622,18 +53670,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Ridgeguard(Tori)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1600,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -53643,6 +53679,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ridgeguard(Tori)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1600,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -53658,18 +53706,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Ridgeguard(Tori)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1600,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -53679,6 +53715,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ridgeguard(Tori)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1600,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -53694,18 +53742,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Ridgeguard(Tori)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1600,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -53715,6 +53751,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ridgeguard(Tori)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1600,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -53730,18 +53778,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Ridgeguard(Tori)",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1600,
-        "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -53751,6 +53787,18 @@
         "modal_price": 2500,
         "min_price": 2500,
         "max_price": 2500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ridgeguard(Tori)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 1800,
+        "min_price": 1600,
+        "max_price": 2000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -53766,15 +53814,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
+        "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Ridgeguard(Tori)",
         "variety": "Other",
-        "grade": "Local",
-        "modal_price": 1800,
-        "min_price": 1600,
-        "max_price": 2000,
+        "grade": "Grade A",
+        "modal_price": 2500,
+        "min_price": 2500,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       }
     ]
@@ -81796,6 +81844,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bottle gourd",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 700,
+        "min_price": 200,
+        "max_price": 1000,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -81817,18 +81877,6 @@
         "modal_price": 1500,
         "min_price": 1000,
         "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bottle gourd",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 700,
-        "min_price": 200,
-        "max_price": 1000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -81868,6 +81916,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bottle gourd",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 700,
+        "min_price": 200,
+        "max_price": 1000,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -81889,18 +81949,6 @@
         "modal_price": 1500,
         "min_price": 1000,
         "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bottle gourd",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 700,
-        "min_price": 200,
-        "max_price": 1000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -81940,6 +81988,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bottle gourd",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 700,
+        "min_price": 200,
+        "max_price": 1000,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -81961,18 +82021,6 @@
         "modal_price": 1500,
         "min_price": 1000,
         "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bottle gourd",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 700,
-        "min_price": 200,
-        "max_price": 1000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -82012,6 +82060,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bottle gourd",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 700,
+        "min_price": 200,
+        "max_price": 1000,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -82033,18 +82093,6 @@
         "modal_price": 1500,
         "min_price": 1000,
         "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bottle gourd",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 700,
-        "min_price": 200,
-        "max_price": 1000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -82084,6 +82132,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bottle gourd",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 700,
+        "min_price": 200,
+        "max_price": 1000,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -82105,18 +82165,6 @@
         "modal_price": 1500,
         "min_price": 1000,
         "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bottle gourd",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 700,
-        "min_price": 200,
-        "max_price": 1000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -82156,6 +82204,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bottle gourd",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 700,
+        "min_price": 200,
+        "max_price": 1000,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -82177,18 +82237,6 @@
         "modal_price": 1500,
         "min_price": 1000,
         "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bottle gourd",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 700,
-        "min_price": 200,
-        "max_price": 1000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -82228,6 +82276,18 @@
         "arrival_date": "2026-09-24"
       },
       {
+        "market": "Ludhiana APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Bottle gourd",
+        "variety": "Other",
+        "grade": "FAQ",
+        "modal_price": 700,
+        "min_price": 200,
+        "max_price": 1000,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -82249,18 +82309,6 @@
         "modal_price": 1500,
         "min_price": 1000,
         "max_price": 2000,
-        "arrival_date": "2026-09-24"
-      },
-      {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bottle gourd",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 700,
-        "min_price": 200,
-        "max_price": 1000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -88752,18 +88800,6 @@
         "min_price": 1700,
         "max_price": 1700,
         "arrival_date": "2026-09-21"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1700,
-        "min_price": 1700,
-        "max_price": 1700,
-        "arrival_date": "2026-09-21"
       }
     ],
     "2026-09-22": [
@@ -88792,18 +88828,6 @@
         "min_price": 1700,
         "max_price": 1700,
         "arrival_date": "2026-09-23"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1700,
-        "min_price": 1700,
-        "max_price": 1700,
-        "arrival_date": "2026-09-23"
       }
     ],
     "2026-09-24": [
@@ -88820,18 +88844,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -88844,15 +88856,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Samrala APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
-        "grade": "Local",
-        "modal_price": 8000,
-        "min_price": 7000,
-        "max_price": 8500,
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -88865,6 +88877,18 @@
         "modal_price": 5000,
         "min_price": 3000,
         "max_price": 6000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Samrala APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ginger(Green)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 8000,
+        "min_price": 7000,
+        "max_price": 8500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -88892,18 +88916,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -88916,15 +88928,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Samrala APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
-        "grade": "Local",
-        "modal_price": 8000,
-        "min_price": 7000,
-        "max_price": 8500,
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -88937,6 +88949,18 @@
         "modal_price": 5000,
         "min_price": 3000,
         "max_price": 6000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Samrala APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ginger(Green)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 8000,
+        "min_price": 7000,
+        "max_price": 8500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -88964,18 +88988,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -88988,15 +89000,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Samrala APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
-        "grade": "Local",
-        "modal_price": 8000,
-        "min_price": 7000,
-        "max_price": 8500,
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -89009,6 +89021,18 @@
         "modal_price": 5000,
         "min_price": 3000,
         "max_price": 6000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Samrala APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ginger(Green)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 8000,
+        "min_price": 7000,
+        "max_price": 8500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -89036,18 +89060,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -89060,15 +89072,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Samrala APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
-        "grade": "Local",
-        "modal_price": 8000,
-        "min_price": 7000,
-        "max_price": 8500,
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -89081,6 +89093,18 @@
         "modal_price": 5000,
         "min_price": 3000,
         "max_price": 6000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Samrala APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ginger(Green)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 8000,
+        "min_price": 7000,
+        "max_price": 8500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -89108,18 +89132,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -89132,15 +89144,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Samrala APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
-        "grade": "Local",
-        "modal_price": 8000,
-        "min_price": 7000,
-        "max_price": 8500,
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -89153,6 +89165,18 @@
         "modal_price": 5000,
         "min_price": 3000,
         "max_price": 6000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Samrala APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ginger(Green)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 8000,
+        "min_price": 7000,
+        "max_price": 8500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -89180,18 +89204,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -89204,15 +89216,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Samrala APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
-        "grade": "Local",
-        "modal_price": 8000,
-        "min_price": 7000,
-        "max_price": 8500,
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -89225,6 +89237,18 @@
         "modal_price": 5000,
         "min_price": 3000,
         "max_price": 6000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Samrala APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ginger(Green)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 8000,
+        "min_price": 7000,
+        "max_price": 8500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -89252,18 +89276,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Ludhiana APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -89276,15 +89288,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Samrala APMC",
+        "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
-        "grade": "Local",
-        "modal_price": 8000,
-        "min_price": 7000,
-        "max_price": 8500,
+        "grade": "FAQ",
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -89297,6 +89309,18 @@
         "modal_price": 5000,
         "min_price": 3000,
         "max_price": 6000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Samrala APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Ginger(Green)",
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 8000,
+        "min_price": 7000,
+        "max_price": 8500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -91448,6 +91472,18 @@
         "min_price": 7800,
         "max_price": 7800,
         "arrival_date": "2026-09-22"
+      },
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Apple",
+        "variety": "Apple",
+        "grade": "Grade A",
+        "modal_price": 7800,
+        "min_price": 7800,
+        "max_price": 7800,
+        "arrival_date": "2026-09-22"
       }
     ],
     "2026-09-23": [
@@ -91466,6 +91502,18 @@
     ],
     "2026-09-24": [
       {
+        "market": "Doraha APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Apple",
+        "variety": "Apple",
+        "grade": "Local",
+        "modal_price": 4500,
+        "min_price": 4500,
+        "max_price": 4500,
+        "arrival_date": "2026-09-24"
+      },
+      {
         "market": "Raikot APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -91478,18 +91526,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Apple",
-        "variety": "Apple",
-        "grade": "Grade A",
-        "modal_price": 8000,
-        "min_price": 8000,
-        "max_price": 8000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -91499,6 +91535,18 @@
         "modal_price": 6000,
         "min_price": 3000,
         "max_price": 9500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Khanna APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Apple",
+        "variety": "Apple",
+        "grade": "Grade A",
+        "modal_price": 8000,
+        "min_price": 8000,
+        "max_price": 8000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -91526,18 +91574,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Apple",
-        "variety": "Apple",
-        "grade": "Grade A",
-        "modal_price": 8000,
-        "min_price": 8000,
-        "max_price": 8000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -91547,6 +91583,18 @@
         "modal_price": 6000,
         "min_price": 3000,
         "max_price": 9500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Khanna APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Apple",
+        "variety": "Apple",
+        "grade": "Grade A",
+        "modal_price": 8000,
+        "min_price": 8000,
+        "max_price": 8000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -91574,18 +91622,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Apple",
-        "variety": "Apple",
-        "grade": "Grade A",
-        "modal_price": 8000,
-        "min_price": 8000,
-        "max_price": 8000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -91595,6 +91631,18 @@
         "modal_price": 6000,
         "min_price": 3000,
         "max_price": 9500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Khanna APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Apple",
+        "variety": "Apple",
+        "grade": "Grade A",
+        "modal_price": 8000,
+        "min_price": 8000,
+        "max_price": 8000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -91622,18 +91670,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Apple",
-        "variety": "Apple",
-        "grade": "Grade A",
-        "modal_price": 8000,
-        "min_price": 8000,
-        "max_price": 8000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -91643,6 +91679,18 @@
         "modal_price": 6000,
         "min_price": 3000,
         "max_price": 9500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Khanna APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Apple",
+        "variety": "Apple",
+        "grade": "Grade A",
+        "modal_price": 8000,
+        "min_price": 8000,
+        "max_price": 8000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -91670,18 +91718,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Apple",
-        "variety": "Apple",
-        "grade": "Grade A",
-        "modal_price": 8000,
-        "min_price": 8000,
-        "max_price": 8000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -91691,6 +91727,18 @@
         "modal_price": 6000,
         "min_price": 3000,
         "max_price": 9500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Khanna APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Apple",
+        "variety": "Apple",
+        "grade": "Grade A",
+        "modal_price": 8000,
+        "min_price": 8000,
+        "max_price": 8000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -91718,18 +91766,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Apple",
-        "variety": "Apple",
-        "grade": "Grade A",
-        "modal_price": 8000,
-        "min_price": 8000,
-        "max_price": 8000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -91739,6 +91775,18 @@
         "modal_price": 6000,
         "min_price": 3000,
         "max_price": 9500,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Khanna APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Apple",
+        "variety": "Apple",
+        "grade": "Grade A",
+        "modal_price": 8000,
+        "min_price": 8000,
+        "max_price": 8000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -91766,18 +91814,6 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Apple",
-        "variety": "Apple",
-        "grade": "Grade A",
-        "modal_price": 8000,
-        "min_price": 8000,
-        "max_price": 8000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -91790,15 +91826,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
+        "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Apple",
         "variety": "Apple",
-        "grade": "Local",
-        "modal_price": 4500,
-        "min_price": 4500,
-        "max_price": 4500,
+        "grade": "Grade A",
+        "modal_price": 8000,
+        "min_price": 8000,
+        "max_price": 8000,
         "arrival_date": "2026-09-24"
       }
     ]
@@ -93585,6 +93621,18 @@
       }
     ],
     "2026-09-19": [
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Pomegranate",
+        "variety": "Other",
+        "grade": "Grade A",
+        "modal_price": 8000,
+        "min_price": 8000,
+        "max_price": 8000,
+        "arrival_date": "2026-09-19"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -101983,18 +102031,6 @@
       }
     ],
     "2026-09-22": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Guava",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 4100,
-        "min_price": 4100,
-        "max_price": 4100,
-        "arrival_date": "2026-09-22"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -112544,18 +112580,6 @@
     ],
     "2026-09-24": [
       {
-        "market": "Khanna APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Lemon",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 5000,
-        "min_price": 5000,
-        "max_price": 5000,
-        "arrival_date": "2026-09-24"
-      },
-      {
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
@@ -112709,6 +112733,18 @@
         "modal_price": 5000,
         "min_price": 3000,
         "max_price": 9000,
+        "arrival_date": "2026-09-24"
+      },
+      {
+        "market": "Khanna APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Lemon",
+        "variety": "Other",
+        "grade": "Grade A",
+        "modal_price": 5000,
+        "min_price": 5000,
+        "max_price": 5000,
         "arrival_date": "2026-09-24"
       }
     ]
@@ -153501,24 +153537,24 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Green Chilli",
+        "commodity": "Ginger(Green)",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
+        "modal_price": 5000,
+        "min_price": 3000,
+        "max_price": 6000,
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
+        "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 2500,
-        "min_price": 2000,
-        "max_price": 3000,
+        "variety": "Green Chilly",
+        "grade": "Grade A",
+        "modal_price": 1500,
+        "min_price": 1500,
+        "max_price": 1500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153537,12 +153573,12 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 5000,
-        "min_price": 3000,
-        "max_price": 6000,
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153558,15 +153594,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
+        "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Green Chilly",
-        "grade": "Grade A",
-        "modal_price": 1500,
-        "min_price": 1500,
-        "max_price": 1500,
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 2500,
+        "min_price": 2000,
+        "max_price": 3000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153585,24 +153621,24 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Green Chilli",
+        "commodity": "Ginger(Green)",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
+        "modal_price": 5000,
+        "min_price": 3000,
+        "max_price": 6000,
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
+        "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 2500,
-        "min_price": 2000,
-        "max_price": 3000,
+        "variety": "Green Chilly",
+        "grade": "Grade A",
+        "modal_price": 1500,
+        "min_price": 1500,
+        "max_price": 1500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153621,12 +153657,12 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 5000,
-        "min_price": 3000,
-        "max_price": 6000,
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153642,15 +153678,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
+        "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Green Chilly",
-        "grade": "Grade A",
-        "modal_price": 1500,
-        "min_price": 1500,
-        "max_price": 1500,
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 2500,
+        "min_price": 2000,
+        "max_price": 3000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153669,24 +153705,24 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Green Chilli",
+        "commodity": "Ginger(Green)",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
+        "modal_price": 5000,
+        "min_price": 3000,
+        "max_price": 6000,
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
+        "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 2500,
-        "min_price": 2000,
-        "max_price": 3000,
+        "variety": "Green Chilly",
+        "grade": "Grade A",
+        "modal_price": 1500,
+        "min_price": 1500,
+        "max_price": 1500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153705,12 +153741,12 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 5000,
-        "min_price": 3000,
-        "max_price": 6000,
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153726,15 +153762,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
+        "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Green Chilly",
-        "grade": "Grade A",
-        "modal_price": 1500,
-        "min_price": 1500,
-        "max_price": 1500,
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 2500,
+        "min_price": 2000,
+        "max_price": 3000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153753,24 +153789,24 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Green Chilli",
+        "commodity": "Ginger(Green)",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
+        "modal_price": 5000,
+        "min_price": 3000,
+        "max_price": 6000,
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
+        "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 2500,
-        "min_price": 2000,
-        "max_price": 3000,
+        "variety": "Green Chilly",
+        "grade": "Grade A",
+        "modal_price": 1500,
+        "min_price": 1500,
+        "max_price": 1500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153789,12 +153825,12 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 5000,
-        "min_price": 3000,
-        "max_price": 6000,
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153810,15 +153846,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
+        "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Green Chilly",
-        "grade": "Grade A",
-        "modal_price": 1500,
-        "min_price": 1500,
-        "max_price": 1500,
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 2500,
+        "min_price": 2000,
+        "max_price": 3000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153837,24 +153873,24 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Green Chilli",
+        "commodity": "Ginger(Green)",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
+        "modal_price": 5000,
+        "min_price": 3000,
+        "max_price": 6000,
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
+        "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 2500,
-        "min_price": 2000,
-        "max_price": 3000,
+        "variety": "Green Chilly",
+        "grade": "Grade A",
+        "modal_price": 1500,
+        "min_price": 1500,
+        "max_price": 1500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153873,12 +153909,12 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 5000,
-        "min_price": 3000,
-        "max_price": 6000,
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153894,15 +153930,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
+        "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Green Chilly",
-        "grade": "Grade A",
-        "modal_price": 1500,
-        "min_price": 1500,
-        "max_price": 1500,
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 2500,
+        "min_price": 2000,
+        "max_price": 3000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153921,24 +153957,24 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Green Chilli",
+        "commodity": "Ginger(Green)",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
+        "modal_price": 5000,
+        "min_price": 3000,
+        "max_price": 6000,
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
+        "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 2500,
-        "min_price": 2000,
-        "max_price": 3000,
+        "variety": "Green Chilly",
+        "grade": "Grade A",
+        "modal_price": 1500,
+        "min_price": 1500,
+        "max_price": 1500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153957,12 +153993,12 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 5000,
-        "min_price": 3000,
-        "max_price": 6000,
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -153978,15 +154014,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
+        "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Green Chilly",
-        "grade": "Grade A",
-        "modal_price": 1500,
-        "min_price": 1500,
-        "max_price": 1500,
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 2500,
+        "min_price": 2000,
+        "max_price": 3000,
         "arrival_date": "2026-09-24"
       },
       {
@@ -154005,24 +154041,24 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Green Chilli",
+        "commodity": "Ginger(Green)",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 2000,
-        "min_price": 1200,
-        "max_price": 2500,
+        "modal_price": 5000,
+        "min_price": 3000,
+        "max_price": 6000,
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Doraha APMC",
+        "market": "Khanna APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Other",
-        "grade": "Local",
-        "modal_price": 2500,
-        "min_price": 2000,
-        "max_price": 3000,
+        "variety": "Green Chilly",
+        "grade": "Grade A",
+        "modal_price": 1500,
+        "min_price": 1500,
+        "max_price": 1500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -154041,12 +154077,12 @@
         "market": "Ludhiana APMC",
         "state": "Punjab",
         "district": "Ludhiana",
-        "commodity": "Ginger(Green)",
+        "commodity": "Green Chilli",
         "variety": "Other",
         "grade": "FAQ",
-        "modal_price": 5000,
-        "min_price": 3000,
-        "max_price": 6000,
+        "modal_price": 2000,
+        "min_price": 1200,
+        "max_price": 2500,
         "arrival_date": "2026-09-24"
       },
       {
@@ -154062,15 +154098,15 @@
         "arrival_date": "2026-09-24"
       },
       {
-        "market": "Khanna APMC",
+        "market": "Doraha APMC",
         "state": "Punjab",
         "district": "Ludhiana",
         "commodity": "Green Chilli",
-        "variety": "Green Chilly",
-        "grade": "Grade A",
-        "modal_price": 1500,
-        "min_price": 1500,
-        "max_price": 1500,
+        "variety": "Other",
+        "grade": "Local",
+        "modal_price": 2500,
+        "min_price": 2000,
+        "max_price": 3000,
         "arrival_date": "2026-09-24"
       }
     ]
@@ -155727,6 +155763,18 @@
       }
     ],
     "2026-09-23": [
+      {
+        "market": "Jagraon APMC",
+        "state": "Punjab",
+        "district": "Ludhiana",
+        "commodity": "Banana",
+        "variety": "Other",
+        "grade": "Grade A",
+        "modal_price": 2200,
+        "min_price": 2200,
+        "max_price": 2200,
+        "arrival_date": "2026-09-23"
+      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -161764,7 +161812,7 @@
     "cotton": "Cotton",
     "rice": "Rice"
   },
-  "updated": "2026-09-24 22:27:14 IST",
+  "updated": "2026-09-25 03:04:07 IST",
   "source": "AGMARKNET via data.gov.in",
   "district": "Ludhiana",
   "state": "Punjab"

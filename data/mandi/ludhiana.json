@@ -23350,33 +23350,9 @@
         "min_price": 2500,
         "max_price": 2500,
         "arrival_date": "2026-09-22"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2500,
-        "min_price": 2500,
-        "max_price": 2500,
-        "arrival_date": "2026-09-22"
       }
     ],
     "2026-09-23": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cauliflower",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 2500,
-        "min_price": 2500,
-        "max_price": 2500,
-        "arrival_date": "2026-09-23"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -26681,18 +26657,6 @@
       }
     ],
     "2026-09-23": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cabbage",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 300,
-        "min_price": 300,
-        "max_price": 300,
-        "arrival_date": "2026-09-23"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -30486,33 +30450,9 @@
         "min_price": 1200,
         "max_price": 1200,
         "arrival_date": "2026-09-22"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bhindi(Ladies Finger)",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1200,
-        "min_price": 1200,
-        "max_price": 1200,
-        "arrival_date": "2026-09-22"
       }
     ],
     "2026-09-23": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Bhindi(Ladies Finger)",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 1200,
-        "min_price": 1200,
-        "max_price": 1200,
-        "arrival_date": "2026-09-23"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -35073,18 +35013,6 @@
       }
     ],
     "2026-09-21": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Brinjal",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 800,
-        "min_price": 800,
-        "max_price": 800,
-        "arrival_date": "2026-09-21"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -40416,33 +40344,9 @@
         "min_price": 600,
         "max_price": 600,
         "arrival_date": "2026-09-21"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cucumbar(Kheera)",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 600,
-        "min_price": 600,
-        "max_price": 600,
-        "arrival_date": "2026-09-21"
       }
     ],
     "2026-09-22": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Cucumbar(Kheera)",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 600,
-        "min_price": 600,
-        "max_price": 600,
-        "arrival_date": "2026-09-22"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -44307,18 +44211,6 @@
       }
     ],
     "2026-09-22": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Pumpkin",
-        "variety": "Other",
-        "grade": "FAQ",
-        "modal_price": 550,
-        "min_price": 550,
-        "max_price": 550,
-        "arrival_date": "2026-09-22"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -91472,18 +91364,6 @@
         "min_price": 7800,
         "max_price": 7800,
         "arrival_date": "2026-09-22"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Apple",
-        "variety": "Apple",
-        "grade": "Grade A",
-        "modal_price": 7800,
-        "min_price": 7800,
-        "max_price": 7800,
-        "arrival_date": "2026-09-22"
       }
     ],
     "2026-09-23": [
@@ -93621,18 +93501,6 @@
       }
     ],
     "2026-09-19": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Pomegranate",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 8000,
-        "min_price": 8000,
-        "max_price": 8000,
-        "arrival_date": "2026-09-19"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -155748,33 +155616,9 @@
         "min_price": 2200,
         "max_price": 2200,
         "arrival_date": "2026-09-22"
-      },
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Banana",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
-        "arrival_date": "2026-09-22"
       }
     ],
     "2026-09-23": [
-      {
-        "market": "Jagraon APMC",
-        "state": "Punjab",
-        "district": "Ludhiana",
-        "commodity": "Banana",
-        "variety": "Other",
-        "grade": "Grade A",
-        "modal_price": 2200,
-        "min_price": 2200,
-        "max_price": 2200,
-        "arrival_date": "2026-09-23"
-      },
       {
         "market": "Jagraon APMC",
         "state": "Punjab",
@@ -161812,7 +161656,7 @@
     "cotton": "Cotton",
     "rice": "Rice"
   },
-  "updated": "2026-09-25 03:04:07 IST",
+  "updated": "2026-09-25 09:29:45 IST",
   "source": "AGMARKNET via data.gov.in",
   "district": "Ludhiana",
   "state": "Punjab"
